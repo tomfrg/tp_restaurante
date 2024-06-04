@@ -10,5 +10,23 @@ namespace TP_restaurante.Clases_restaurante
     {
         private int _id;
         private int _capacidad;
+        public Mesa(int id, int capacidad)
+        {
+            this._id = id;
+            this._capacidad = capacidad;
+        }
+        public bool AsignarPlato(PlatoDeComida platoDeComida)
+        {
+            if (platoDeComida.HayParaOfrecer())
+            {
+                platoDeComida.UsarIngredientes();
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("No hay suficiente stock para preparar el plato de comida.");
+                return false;
+            }
+        }
     }
 }

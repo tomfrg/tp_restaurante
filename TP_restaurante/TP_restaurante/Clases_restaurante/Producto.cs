@@ -10,28 +10,36 @@ namespace TP_restaurante.Clases_restaurante
     {
         private string _nombre;
         private int _stock;
-        private float _precio;
-        private Empleado _empleado;
-        public int GetterStock
-        {
-            get { return _stock;  }
-            set
-            { 
-                if (_empleado._rol == RolesEmpleados.Encargado)
-                {
-                    _stock = value;
-                }
-                else
-                {
-                    throw new UnauthorizedAccessException("Solo el encargado puede modificar el stock.");
-                }
-            }
-        }
-        public Producto(string _nombre, int _stock, float _precio)
+        private double _precio;
+        public Producto(string _nombre, int _stock, double _precio)
         {
             this._nombre = _nombre;
             this._stock = _stock;
             this._precio = _precio;
+        }
+        public string Nombre
+        {
+            get { return _nombre; }
+        }
+        public int Stock
+        {
+            get { return _stock; }
+            set { _stock = value; }
+        }
+        public bool ModificarStock(int nuevoStock, Empleado empleado)
+        {
+            {
+                if (empleado._rol == RolesEmpleados.Encargado)
+                {
+                    Stock = nuevoStock;
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("Solo el encargado puede modificar el stock.");
+                    return false;
+                }
+            }
         }
     }
 }

@@ -1,0 +1,11 @@
+C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp_restaurante\TP_restaurante\TP_restaurante\obj\Debug\TP_restaurante.csproj.AssemblyReference.cache
+C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp_restaurante\TP_restaurante\TP_restaurante\obj\Debug\TP_restaurante.Form1.resources
+C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp_restaurante\TP_restaurante\TP_restaurante\obj\Debug\TP_restaurante.Form2.resources
+C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp_restaurante\TP_restaurante\TP_restaurante\obj\Debug\TP_restaurante.Properties.Resources.resources
+C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp_restaurante\TP_restaurante\TP_restaurante\obj\Debug\TP_restaurante.csproj.GenerateResource.cache
+C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp_restaurante\TP_restaurante\TP_restaurante\obj\Debug\TP_restaurante.csproj.CoreCompileInputs.cache
+C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp_restaurante\TP_restaurante\TP_restaurante\bin\Debug\TP_restaurante.exe.config
+C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp_restaurante\TP_restaurante\TP_restaurante\bin\Debug\TP_restaurante.exe
+C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp_restaurante\TP_restaurante\TP_restaurante\bin\Debug\TP_restaurante.pdb
+C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp_restaurante\TP_restaurante\TP_restaurante\obj\Debug\TP_restaurante.exe
+C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp_restaurante\TP_restaurante\TP_restaurante\obj\Debug\TP_restaurante.pdb

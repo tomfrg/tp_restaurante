@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace TP_restaurante.Clases_restaurante
 {
-    internal class Interfaces
+    internal class Bebidas
     {
-        public interface INombre
-        {
-            string _nombre { get; }
-        }
+        private string _nombre;
+        private bool _conAlcohol;
     }
 }
