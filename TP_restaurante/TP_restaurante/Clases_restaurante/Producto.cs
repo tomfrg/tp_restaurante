@@ -11,12 +11,14 @@ namespace TP_restaurante.Clases_restaurante
         private string _nombre;
         private int _stock;
         private double _precio;
+        private RolesEmpleados _rol = RolesEmpleados.Encargado;
         public Producto(string _nombre, int _stock, double _precio)
         {
             this._nombre = _nombre;
             this._stock = _stock;
             this._precio = _precio;
         }
+
         public string Nombre
         {
             get { return _nombre; }
@@ -24,20 +26,11 @@ namespace TP_restaurante.Clases_restaurante
         public int Stock
         {
             get { return _stock; }
-            set { _stock = value; }
-        }
-        public bool ModificarStock(int nuevoStock, Empleado empleado)
-        {
+            set
             {
-                if (empleado._rol == RolesEmpleados.Encargado)
+                if (_rol == RolesEmpleados.Encargado)
                 {
-                    Stock = nuevoStock;
-                    return true;
-                }
-                else
-                {
-                    Console.WriteLine("Solo el encargado puede modificar el stock.");
-                    return false;
+                    _stock = value;
                 }
             }
         }
