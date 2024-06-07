@@ -28,40 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.listBoxIngredientes = new System.Windows.Forms.ListBox();
+            this.listBoxPlatosDeComida = new System.Windows.Forms.ListBox();
             this.LabelIngredientes = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonCrearPlatoDeComida = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboBoxProducto = new System.Windows.Forms.ComboBox();
+            this.textBoxNombrePlatoDeComida = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonModificar = new System.Windows.Forms.Button();
-            this.buttonEliminar = new System.Windows.Forms.Button();
+            this.buttonEliminarPlatoDeComida = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.buttonAtras = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.buttonAgregarProducto = new System.Windows.Forms.Button();
+            this.buttonEliminarProducto = new System.Windows.Forms.Button();
+            this.textBoxCantidadProducto = new System.Windows.Forms.TextBox();
+            this.buttonEditarPlato = new System.Windows.Forms.Button();
+            this.buttonVerIngredientes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listBox1
+            // listBoxIngredientes
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(139, 59);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(146, 329);
-            this.listBox1.TabIndex = 0;
+            this.listBoxIngredientes.FormattingEnabled = true;
+            this.listBoxIngredientes.Location = new System.Drawing.Point(199, 59);
+            this.listBoxIngredientes.Name = "listBoxIngredientes";
+            this.listBoxIngredientes.Size = new System.Drawing.Size(146, 329);
+            this.listBoxIngredientes.TabIndex = 0;
+            this.listBoxIngredientes.SelectedIndexChanged += new System.EventHandler(this.listBoxIngredientes_SelectedIndexChanged);
             // 
-            // listBox2
+            // listBoxPlatosDeComida
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(432, 59);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(156, 329);
-            this.listBox2.TabIndex = 1;
+            this.listBoxPlatosDeComida.FormattingEnabled = true;
+            this.listBoxPlatosDeComida.Location = new System.Drawing.Point(432, 59);
+            this.listBoxPlatosDeComida.Name = "listBoxPlatosDeComida";
+            this.listBoxPlatosDeComida.Size = new System.Drawing.Size(156, 329);
+            this.listBoxPlatosDeComida.TabIndex = 1;
             // 
             // LabelIngredientes
             // 
             this.LabelIngredientes.AutoSize = true;
-            this.LabelIngredientes.Location = new System.Drawing.Point(136, 43);
+            this.LabelIngredientes.Location = new System.Drawing.Point(196, 43);
             this.LabelIngredientes.Name = "LabelIngredientes";
             this.LabelIngredientes.Size = new System.Drawing.Size(65, 13);
             this.LabelIngredientes.TabIndex = 2;
@@ -70,7 +76,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(438, 43);
+            this.label2.Location = new System.Drawing.Point(429, 43);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 13);
             this.label2.TabIndex = 3;
@@ -78,54 +84,48 @@
             // 
             // buttonCrearPlatoDeComida
             // 
-            this.buttonCrearPlatoDeComida.Location = new System.Drawing.Point(139, 394);
+            this.buttonCrearPlatoDeComida.Location = new System.Drawing.Point(232, 394);
             this.buttonCrearPlatoDeComida.Name = "buttonCrearPlatoDeComida";
             this.buttonCrearPlatoDeComida.Size = new System.Drawing.Size(75, 23);
             this.buttonCrearPlatoDeComida.TabIndex = 4;
             this.buttonCrearPlatoDeComida.Text = "Crear";
             this.buttonCrearPlatoDeComida.UseVisualStyleBackColor = true;
+            this.buttonCrearPlatoDeComida.Click += new System.EventHandler(this.buttonCrearPlatoDeComida_Click);
             // 
-            // comboBox1
+            // comboBoxProducto
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 98);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 5;
+            this.comboBoxProducto.FormattingEnabled = true;
+            this.comboBoxProducto.Location = new System.Drawing.Point(72, 123);
+            this.comboBoxProducto.Name = "comboBoxProducto";
+            this.comboBoxProducto.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxProducto.TabIndex = 5;
+            this.comboBoxProducto.Text = "Ingrediente";
+            this.comboBoxProducto.SelectedIndexChanged += new System.EventHandler(this.comboBoxProducto_SelectedIndexChanged);
             // 
-            // textBox1
+            // textBoxNombrePlatoDeComida
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 59);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 6;
+            this.textBoxNombrePlatoDeComida.Location = new System.Drawing.Point(12, 75);
+            this.textBoxNombrePlatoDeComida.Name = "textBoxNombrePlatoDeComida";
+            this.textBoxNombrePlatoDeComida.Size = new System.Drawing.Size(121, 20);
+            this.textBoxNombrePlatoDeComida.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(326, 203);
+            this.label1.Location = new System.Drawing.Point(358, 202);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 7;
             this.label1.Text = "--------------->";
             // 
-            // buttonModificar
+            // buttonEliminarPlatoDeComida
             // 
-            this.buttonModificar.Location = new System.Drawing.Point(432, 394);
-            this.buttonModificar.Name = "buttonModificar";
-            this.buttonModificar.Size = new System.Drawing.Size(75, 23);
-            this.buttonModificar.TabIndex = 8;
-            this.buttonModificar.Text = "Editar";
-            this.buttonModificar.UseVisualStyleBackColor = true;
-            // 
-            // buttonEliminar
-            // 
-            this.buttonEliminar.Location = new System.Drawing.Point(513, 395);
-            this.buttonEliminar.Name = "buttonEliminar";
-            this.buttonEliminar.Size = new System.Drawing.Size(75, 23);
-            this.buttonEliminar.TabIndex = 9;
-            this.buttonEliminar.Text = "Eliminar";
-            this.buttonEliminar.UseVisualStyleBackColor = true;
+            this.buttonEliminarPlatoDeComida.Location = new System.Drawing.Point(513, 394);
+            this.buttonEliminarPlatoDeComida.Name = "buttonEliminarPlatoDeComida";
+            this.buttonEliminarPlatoDeComida.Size = new System.Drawing.Size(75, 23);
+            this.buttonEliminarPlatoDeComida.TabIndex = 9;
+            this.buttonEliminarPlatoDeComida.Text = "Eliminar";
+            this.buttonEliminarPlatoDeComida.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -146,23 +146,83 @@
             this.buttonAtras.UseVisualStyleBackColor = true;
             this.buttonAtras.Click += new System.EventHandler(this.buttonAtras_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(9, 59);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(137, 13);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Nombre de plato de comida";
+            // 
+            // buttonAgregarProducto
+            // 
+            this.buttonAgregarProducto.Location = new System.Drawing.Point(12, 150);
+            this.buttonAgregarProducto.Name = "buttonAgregarProducto";
+            this.buttonAgregarProducto.Size = new System.Drawing.Size(53, 23);
+            this.buttonAgregarProducto.TabIndex = 14;
+            this.buttonAgregarProducto.Text = "Agregar";
+            this.buttonAgregarProducto.UseVisualStyleBackColor = true;
+            this.buttonAgregarProducto.Click += new System.EventHandler(this.buttonAgregarProducto_Click);
+            // 
+            // buttonEliminarProducto
+            // 
+            this.buttonEliminarProducto.Location = new System.Drawing.Point(13, 179);
+            this.buttonEliminarProducto.Name = "buttonEliminarProducto";
+            this.buttonEliminarProducto.Size = new System.Drawing.Size(52, 23);
+            this.buttonEliminarProducto.TabIndex = 15;
+            this.buttonEliminarProducto.Text = "Eliminar";
+            this.buttonEliminarProducto.UseVisualStyleBackColor = true;
+            // 
+            // textBoxCantidadProducto
+            // 
+            this.textBoxCantidadProducto.Location = new System.Drawing.Point(12, 124);
+            this.textBoxCantidadProducto.Name = "textBoxCantidadProducto";
+            this.textBoxCantidadProducto.Size = new System.Drawing.Size(53, 20);
+            this.textBoxCantidadProducto.TabIndex = 16;
+            this.textBoxCantidadProducto.Text = "Cantidad";
+            this.textBoxCantidadProducto.TextChanged += new System.EventHandler(this.textBoxCantidadProducto_TextChanged);
+            // 
+            // buttonEditarPlato
+            // 
+            this.buttonEditarPlato.Location = new System.Drawing.Point(432, 394);
+            this.buttonEditarPlato.Name = "buttonEditarPlato";
+            this.buttonEditarPlato.Size = new System.Drawing.Size(75, 23);
+            this.buttonEditarPlato.TabIndex = 17;
+            this.buttonEditarPlato.Text = "Editar";
+            this.buttonEditarPlato.UseVisualStyleBackColor = true;
+            // 
+            // buttonVerIngredientes
+            // 
+            this.buttonVerIngredientes.Location = new System.Drawing.Point(432, 424);
+            this.buttonVerIngredientes.Name = "buttonVerIngredientes";
+            this.buttonVerIngredientes.Size = new System.Drawing.Size(156, 23);
+            this.buttonVerIngredientes.TabIndex = 18;
+            this.buttonVerIngredientes.Text = "Ver Ingredietnes";
+            this.buttonVerIngredientes.UseVisualStyleBackColor = true;
+            // 
             // FormCocinero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 472);
+            this.Controls.Add(this.buttonVerIngredientes);
+            this.Controls.Add(this.buttonEditarPlato);
+            this.Controls.Add(this.textBoxCantidadProducto);
+            this.Controls.Add(this.buttonEliminarProducto);
+            this.Controls.Add(this.buttonAgregarProducto);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.buttonAtras);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.buttonEliminar);
-            this.Controls.Add(this.buttonModificar);
+            this.Controls.Add(this.buttonEliminarPlatoDeComida);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.textBoxNombrePlatoDeComida);
+            this.Controls.Add(this.comboBoxProducto);
             this.Controls.Add(this.buttonCrearPlatoDeComida);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.LabelIngredientes);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.listBoxPlatosDeComida);
+            this.Controls.Add(this.listBoxIngredientes);
             this.Name = "FormCocinero";
             this.Text = "FormCocinero";
             this.ResumeLayout(false);
@@ -172,17 +232,22 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox listBoxIngredientes;
+        private System.Windows.Forms.ListBox listBoxPlatosDeComida;
         private System.Windows.Forms.Label LabelIngredientes;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonCrearPlatoDeComida;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboBoxProducto;
+        private System.Windows.Forms.TextBox textBoxNombrePlatoDeComida;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button buttonModificar;
-        private System.Windows.Forms.Button buttonEliminar;
+        private System.Windows.Forms.Button buttonEliminarPlatoDeComida;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button buttonAtras;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button buttonAgregarProducto;
+        private System.Windows.Forms.Button buttonEliminarProducto;
+        private System.Windows.Forms.TextBox textBoxCantidadProducto;
+        private System.Windows.Forms.Button buttonEditarPlato;
+        private System.Windows.Forms.Button buttonVerIngredientes;
     }
 }

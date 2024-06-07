@@ -76,10 +76,6 @@ namespace TP_restaurante
         private void buttonIngresar_Click(object sender, EventArgs e)
         {
             var selectedItem = listBoxUsuarios.SelectedItem;
-            if (selectedItem != null)
-            {
-                MessageBox.Show($"Tipo de objeto seleccionado: {selectedItem.GetType().Name}");
-            }
 
             if (selectedItem is Empleado usuarioSeleccionado)
             {

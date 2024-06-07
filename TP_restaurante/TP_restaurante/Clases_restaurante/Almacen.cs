@@ -9,6 +9,10 @@ namespace TP_restaurante.Clases_restaurante
     internal class Almacen
     {
         public static List<Producto> listaDeProductos = new List<Producto>();
+        public List<Producto> ListaDeProductos
+        {
+            get { return listaDeProductos; }
+        }
         public static void AlmacenarProducto(Producto producto)
         {
             listaDeProductos.Add(producto);
@@ -24,6 +28,14 @@ namespace TP_restaurante.Clases_restaurante
         {
             Console.WriteLine($"{nombre}: {cantidad}");
         }
+        public static void RetornarLista(List<Producto> listaDeProductos) 
+        {
+            foreach (var item in listaDeProductos)
+            {
+                Mostrar(item.Nombre, item.Stock);
+            }
+        }
+        
     }
 }
 

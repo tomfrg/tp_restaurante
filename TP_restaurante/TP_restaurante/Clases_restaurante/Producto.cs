@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TP_restaurante.Clases_restaurante
 {
-    internal class Producto
+    public class Producto
     {
         private string _nombre;
         private int _stock;
@@ -33,6 +33,10 @@ namespace TP_restaurante.Clases_restaurante
                     _stock = value;
                 }
             }
+        }
+        public override string ToString()
+        {
+            return $"{Stock} - {Nombre}";
         }
     }
 }

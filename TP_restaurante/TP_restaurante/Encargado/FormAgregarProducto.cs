@@ -44,7 +44,7 @@ namespace TP_restaurante.Encargado
             {
                 Producto producto = new Producto(productoNombre, cantidadProductoInt, 1);
 
-                _formEncargado.AgregarProductoAlListBox($"{producto.Stock} - {producto.Nombre}");
+                _formEncargado.AgregarProductoAlListBox(producto);
 
                 this.Hide();
             }

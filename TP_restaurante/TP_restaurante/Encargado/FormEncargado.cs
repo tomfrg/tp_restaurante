@@ -47,9 +47,13 @@ namespace TP_restaurante
             FormAgregarProducto formAgregarProducto = new FormAgregarProducto(this, Usuario);
             formAgregarProducto.Show();
         }
-        public void AgregarProductoAlListBox(string producto)
+        public void AgregarProductoAlListBox(Producto producto)
         {
             listBoxProductos.Items.Add(producto);
+        }
+        public void AgregarProductoALista(Producto producto)
+        {
+            Almacen.AlmacenarProducto(producto);    
         }
 
         private void listBoxProductos_SelectedIndexChanged(object sender, EventArgs e)
