@@ -76,6 +76,7 @@
   <ItemGroup>
     <Compile Include="Clases_restaurante\Almacen.cs" />
     <Compile Include="Clases_restaurante\Bebidas.cs" />
+    <Compile Include="Clases_restaurante\Cocina.cs" />
     <Compile Include="Clases_restaurante\Empleados.cs" />
     <Compile Include="Clases_restaurante\GestorJson.cs" />
     <Compile Include="Clases_restaurante\Menu.cs" />

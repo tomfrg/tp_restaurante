@@ -9,18 +9,35 @@ namespace TP_restaurante.Clases_restaurante
     internal class PlatoDeComida
     {
         private string _nombre;
-        private Dictionary<Producto, int> _ingredientes; // producto y cantidad requerido
-        private DateTime _tiempoDePreparacion;
-        public PlatoDeComida(string nombre, Dictionary<Producto, int> ingredientes, DateTime tiempoDePreparacion)
+        private List<Dictionary<Producto, int>> _ingredientes; // producto y cantidad requerido
+        private TimeSpan _tiempoDePreparacion;
+        public string Nombre
+        {
+            get { return _nombre; }
+        }
+        public TimeSpan TiempoDePreparacion
+        {
+            get { return _tiempoDePreparacion; }
+        }
+        public List<Dictionary<Producto, int>> Ingredientes
+        {
+            get { return _ingredientes; }
+        }
+        public PlatoDeComida(string nombre, List<Dictionary<Producto, int>> ingredientes, TimeSpan tiempoDePreparacion)
         {
             _nombre = nombre;
             _ingredientes = ingredientes;
             _tiempoDePreparacion = tiempoDePreparacion;
         }
+        public PlatoDeComida()
+        {
+
+        }
         public string GetterNombrePlatoDeComida
         {
             get { return _nombre; }
         }
+        /*
         public bool HayParaOfrecer()
         {
             foreach (var ingrediente in _ingredientes)
@@ -43,6 +60,18 @@ namespace TP_restaurante.Clases_restaurante
                 return true;
             }
             return false;
+        }
+         */
+        public string ObtenerIngredientes()
+        {
+            {
+                StringBuilder sb = new StringBuilder();
+                foreach (var dict in _ingredientes)
+                {
+                    sb.Append($"{dict.Values} {dict.Keys}, ");
+                }
+                return sb.ToString();
+            }
         }
     }
 }

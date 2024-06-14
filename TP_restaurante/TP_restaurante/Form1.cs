@@ -36,7 +36,13 @@ namespace TP_restaurante
 
         private void buttonEliminar_Click(object sender, EventArgs e)
         {
-            listBoxUsuarios.Items.Remove(listBoxUsuarios.SelectedItem);
+            Empleado empleadoSeleccionado = listBoxUsuarios.SelectedItem as Empleado;
+
+            if (empleadoSeleccionado != null)
+            {
+                listBoxUsuarios.Items.Remove(listBoxUsuarios.SelectedItem);
+                Restaurante.EliminarEmpleado(empleadoSeleccionado);
+            }
         }
 
         private void buttonIngresar_Click(object sender, EventArgs e)

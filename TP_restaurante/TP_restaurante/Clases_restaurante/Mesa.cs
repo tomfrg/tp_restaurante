@@ -15,6 +15,7 @@ namespace TP_restaurante.Clases_restaurante
             this._id = id;
             this._capacidad = capacidad;
         }
+        /*
         public bool AsignarPlato(PlatoDeComida platoDeComida)
         {
             if (platoDeComida.HayParaOfrecer())
@@ -28,5 +29,6 @@ namespace TP_restaurante.Clases_restaurante
                 return false;
             }
         }
+        */
     }
 }

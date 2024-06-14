@@ -16,17 +16,15 @@ namespace TP_restaurante.Cocinero
     {
         private Empleado _usuario;
         private Dictionary<Producto, int> productosSeleccionados = new Dictionary<Producto, int>();
-
+        private List<Dictionary<Producto, int>> listProductosSeleccionados = new List<Dictionary<Producto, int>>();
+        private bool flagCaracteristicas = true; 
         public FormCocinero(Empleado _usuario)
         {
             InitializeComponent();
             this._usuario = _usuario;
 
-            foreach (var item in Almacen.listaDeProductos)
-            {
-                comboBoxProducto.Items.Add(item.Nombre);
-            }
-            comboBoxProducto.DisplayMember = "Nombre";
+            CargarProductoEnComboBox();
+            CargarPlatosDeComidaEnListBox();
         }
 
         private void buttonAtras_Click(object sender, EventArgs e)
@@ -38,54 +36,133 @@ namespace TP_restaurante.Cocinero
 
         private void buttonAgregarProducto_Click(object sender, EventArgs e)
         {
-            if (comboBoxProducto.SelectedItem is Producto ingredienteSeleccionado)
+            if (comboBoxProducto.SelectedItem != null)
             {
-                if (int.TryParse(textBoxCantidadProducto.Text, out int cantidad) && cantidad > 0)
+                string nombreProducto = comboBoxProducto.SelectedItem.ToString();
+
+                // Encontrar el objeto Producto correspondiente en la lista de productos
+                Producto productoElegido = Almacen.listaDeProductos.Find(p => p.Nombre == nombreProducto);
+
+                if (productoElegido != null)
                 {
-                    if (productosSeleccionados.ContainsKey(ingredienteSeleccionado))
+                    string cantProductoElegido = textBoxCantidadProducto.Text;
+
+                    if (int.TryParse(cantProductoElegido, out int cantProductoElegidoINT))
                     {
-                        productosSeleccionados[ingredienteSeleccionado] += cantidad;
+                        if(productoElegido.UsarStock(cantProductoElegidoINT))
+                        {
+                            listBoxIngredientes.Items.Add($"{cantProductoElegidoINT} - {productoElegido.Nombre}");
+                            productosSeleccionados.Add(productoElegido, cantProductoElegidoINT);
+                            listProductosSeleccionados.Add(productosSeleccionados);
+                        }
                     }
                     else
                     {
-                        productosSeleccionados.Add(ingredienteSeleccionado, cantidad);
+                        MessageBox.Show("La cantidad ingresada no es un número válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-
-                    MessageBox.Show($"Producto agregado: {ingredienteSeleccionado.Nombre}, Cantidad: {cantidad}");
                 }
                 else
                 {
-                    MessageBox.Show("Ingrese una cantidad válida mayor a 0.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Producto no encontrado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Seleccione un producto válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor, selecciona un producto.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void buttonCrearPlatoDeComida_Click(object sender, EventArgs e)
         {
-            string nombrePlatoDeComida = textBoxNombrePlatoDeComida.Text;
+            if (productosSeleccionados.Count > 0)
+            { 
+                string nombrePlatoDeComida = textBoxNombrePlatoDeComida.Text;
+                string tiempoDePreparacionSTRING = textBoxTiempoDePreparacion.Text;
 
-            if (!string.IsNullOrWhiteSpace(nombrePlatoDeComida) && productosSeleccionados.Count > 0)
-            {
-                DateTime tiempoDePreparacion = DateTime.Now;
-                PlatoDeComida platoDeComida = new PlatoDeComida(nombrePlatoDeComida, productosSeleccionados, tiempoDePreparacion);
+                if (double.TryParse(tiempoDePreparacionSTRING, out double tiempoDePreparacionMIN))
+                {
+                    TimeSpan tiempoDePreparacion = TimeSpan.FromMinutes(tiempoDePreparacionMIN);
 
-                listBoxPlatosDeComida.Items.Add(platoDeComida);
+                    // Crear el plato de comida usando la clase estática Cocina
+                    PlatoDeComida platoDeComida = new PlatoDeComida(nombrePlatoDeComida, listProductosSeleccionados, tiempoDePreparacion);
+
+                    // Limpiar selección de ingredientes y recargar la lista de platos
+                    productosSeleccionados.Clear();
+                    listBoxIngredientes.Items.Clear();
+                    Restaurante.AgregarPlato(platoDeComida);
+                    CargarPlatosDeComidaEnListBox();
+                }
+                else
+                {
+                    MessageBox.Show("El tiempo de preparación ingresado no es válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
-                MessageBox.Show("Ingrese un nombre para el plato de comida y agregue al menos un ingrediente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("No hay ingredientes ingresados.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }       
+
+        public void CargarPlatosDeComidaEnListBox()
+        {
+            listBoxPlatosDeComida.Items.Clear();
+
+            foreach (var platos in Restaurante.ListaPlatos)
+            {
+                listBoxPlatosDeComida.Items.Add(platos.Nombre);
+            }
+        }
+        public void CargarProductoEnComboBox()
+        {
+            comboBoxProducto.Items.Clear();
+
+            foreach (var producto in Almacen.listaDeProductos)
+            {
+                comboBoxProducto.Items.Add(producto.Nombre);
+            }
+        }
+        private void buttonEliminarProducto_Click(object sender, EventArgs e)
+        {
+            listBoxIngredientes.Items.Remove(listBoxIngredientes.SelectedItem);
+        }
+        private void buttonEliminarPlatoDeComida_Click(object sender, EventArgs e)
+        {
+            PlatoDeComida platoDeComidaSeleccionado = listBoxPlatosDeComida.SelectedItem as PlatoDeComida;
+
+            if (platoDeComidaSeleccionado != null)
+            {
+                listBoxPlatosDeComida.Items.Remove(listBoxPlatosDeComida.SelectedItem);
+                Restaurante.EliminarPlatoDeComida(platoDeComidaSeleccionado);
+            }
+        }
+        private void buttonVerCaracteristicas_Click(object sender, EventArgs e)
+        {
+            if (listBoxPlatosDeComida.SelectedItem != null)
+            {
+                int contadorIngredientes = 2;
+                string platoSeleccionado = listBoxPlatosDeComida.SelectedItem.ToString();
+                PlatoDeComida platoDeComidaSeleccionado = Restaurante.ListaPlatos.Find(p => p.Nombre == platoSeleccionado);
+
+                if (platoDeComidaSeleccionado != null)
+                {
+                    listBoxPlatosDeComida.Items.Insert(listBoxPlatosDeComida.SelectedIndex + 1, $"  -Time: {platoDeComidaSeleccionado.TiempoDePreparacion}");
+                    foreach(var i in platoDeComidaSeleccionado.Ingredientes)
+                    {
+                        listBoxPlatosDeComida.Items.Insert(listBoxPlatosDeComida.SelectedIndex + contadorIngredientes, platoDeComidaSeleccionado.ObtenerIngredientes());
+                        contadorIngredientes = contadorIngredientes + 1;
+                    }
+
+                    flagCaracteristicas = false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, selecciona un plato de comida válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                flagCaracteristicas = true;
             }
         }
 
-
-
-
-
-
+        #region Métodos privados
         private void comboBoxProducto_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -100,5 +177,21 @@ namespace TP_restaurante.Cocinero
         {
 
         }
+
+        private void FormCocinero_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxTiempoDePreparacion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
+
     }
 }

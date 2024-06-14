@@ -3,12 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|c:\\users\\thomas\\desktop\\utn\\2\u00BA cuatrimestre\\tp-restaurante\\tp_restaurante\\tp_restaurante\\tp_restaurante\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\tp_restaurante\\clases_restaurante\\platodecomida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|solutionrelative:tp_restaurante\\clases_restaurante\\platodecomida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|c:\\users\\thomas\\desktop\\utn\\2\u00BA cuatrimestre\\tp-restaurante\\tp_restaurante\\tp_restaurante\\tp_restaurante\\cocinero\\formcocinero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|solutionrelative:tp_restaurante\\cocinero\\formcocinero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\tp_restaurante\\clases_restaurante\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|solutionrelative:tp_restaurante\\clases_restaurante\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\tp_restaurante\\clases_restaurante\\cocina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|solutionrelative:tp_restaurante\\clases_restaurante\\cocina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\tp_restaurante\\cocinero\\formcocinero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|solutionrelative:tp_restaurante\\cocinero\\formcocinero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\tp_restaurante\\clases_restaurante\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|solutionrelative:tp_restaurante\\clases_restaurante\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\tp_restaurante\\clases_restaurante\\restaurante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|solutionrelative:tp_restaurante\\clases_restaurante\\restaurante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\tp_restaurante\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|solutionrelative:tp_restaurante\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\tp_restaurante\\encargado\\formencargado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|solutionrelative:tp_restaurante\\encargado\\formencargado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\tp_restaurante\\encargado\\formencargado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|solutionrelative:tp_restaurante\\encargado\\formencargado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\tp_restaurante\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|solutionrelative:tp_restaurante\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\tp_restaurante\\clases_restaurante\\bebidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|solutionrelative:tp_restaurante\\clases_restaurante\\bebidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\tp_restaurante\\clases_restaurante\\almacen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|solutionrelative:tp_restaurante\\clases_restaurante\\almacen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\tp_restaurante\\hardcoreo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A20AC592-E645-4FF2-A45E-B470991D7127}|TP_restaurante\\TP_restaurante.csproj|solutionrelative:tp_restaurante\\hardcoreo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,24 +66,168 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormCocinero.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Cocinero\\FormCocinero.cs",
+              "RelativeDocumentMoniker": "TP_restaurante\\Cocinero\\FormCocinero.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Cocinero\\FormCocinero.cs",
+              "RelativeToolTip": "TP_restaurante\\Cocinero\\FormCocinero.cs",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAcwJgAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T16:39:15.755Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PlatoDeComida.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Clases_restaurante\\PlatoDeComida.cs",
+              "RelativeDocumentMoniker": "TP_restaurante\\Clases_restaurante\\PlatoDeComida.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Clases_restaurante\\PlatoDeComida.cs",
+              "RelativeToolTip": "TP_restaurante\\Clases_restaurante\\PlatoDeComida.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAEwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T20:32:42.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Clases_restaurante\\Producto.cs",
+              "RelativeDocumentMoniker": "TP_restaurante\\Clases_restaurante\\Producto.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Clases_restaurante\\Producto.cs",
+              "RelativeToolTip": "TP_restaurante\\Clases_restaurante\\Producto.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAwC8AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T20:13:37.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormEncargado.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Encargado\\FormEncargado.cs",
+              "RelativeDocumentMoniker": "TP_restaurante\\Encargado\\FormEncargado.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Encargado\\FormEncargado.cs",
+              "RelativeToolTip": "TP_restaurante\\Encargado\\FormEncargado.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAswCkAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T19:55:49.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormEncargado.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Encargado\\FormEncargado.cs",
+              "RelativeDocumentMoniker": "TP_restaurante\\Encargado\\FormEncargado.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Encargado\\FormEncargado.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TP_restaurante\\Encargado\\FormEncargado.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T19:55:47.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Bebidas.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Clases_restaurante\\Bebidas.cs",
+              "RelativeDocumentMoniker": "TP_restaurante\\Clases_restaurante\\Bebidas.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Clases_restaurante\\Bebidas.cs",
+              "RelativeToolTip": "TP_restaurante\\Clases_restaurante\\Bebidas.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T19:29:24.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Almacen.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Clases_restaurante\\Almacen.cs",
+              "RelativeDocumentMoniker": "TP_restaurante\\Clases_restaurante\\Almacen.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Clases_restaurante\\Almacen.cs",
+              "RelativeToolTip": "TP_restaurante\\Clases_restaurante\\Almacen.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T19:29:05.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cocina.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Clases_restaurante\\Cocina.cs",
+              "RelativeDocumentMoniker": "TP_restaurante\\Clases_restaurante\\Cocina.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Clases_restaurante\\Cocina.cs",
+              "RelativeToolTip": "TP_restaurante\\Clases_restaurante\\Cocina.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAYwCIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T19:14:45.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Clases_restaurante\\Menu.cs",
+              "RelativeDocumentMoniker": "TP_restaurante\\Clases_restaurante\\Menu.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Clases_restaurante\\Menu.cs",
+              "RelativeToolTip": "TP_restaurante\\Clases_restaurante\\Menu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T18:57:48.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Restaurante.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Clases_restaurante\\Restaurante.cs",
+              "RelativeDocumentMoniker": "TP_restaurante\\Clases_restaurante\\Restaurante.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Clases_restaurante\\Restaurante.cs",
+              "RelativeToolTip": "TP_restaurante\\Clases_restaurante\\Restaurante.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T18:32:01.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Hardcoreo.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Hardcoreo.cs",
+              "RelativeDocumentMoniker": "TP_restaurante\\Hardcoreo.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Hardcoreo.cs",
+              "RelativeToolTip": "TP_restaurante\\Hardcoreo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T18:10:08.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormCocinero.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Cocinero\\FormCocinero.cs",
+              "RelativeDocumentMoniker": "TP_restaurante\\Cocinero\\FormCocinero.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Cocinero\\FormCocinero.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TP_restaurante\\Cocinero\\FormCocinero.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T16:39:09.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Form1.cs",
               "RelativeDocumentMoniker": "TP_restaurante\\Form1.cs",
               "ToolTip": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Form1.cs",
               "RelativeToolTip": "TP_restaurante\\Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAuwBIAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T20:26:05.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T20:26:05.642Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\TP_restaurante\\TP_restaurante\\Form1.cs",
               "RelativeDocumentMoniker": "TP_restaurante\\Form1.cs",

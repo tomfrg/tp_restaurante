@@ -8,12 +8,13 @@ namespace TP_restaurante.Clases_restaurante
 {
     internal class Menu
     {
+        /*
         private List<PlatoDeComida> _platosDeComida;
         public Menu(List<PlatoDeComida> platosDeComida)
         {
             _platosDeComida = platosDeComida;
         }
-        public void CrearPlatoDeComida(string nombrePlatoDeComida, Dictionary<Producto, int> ingredientes, DateTime timpoDePreparacion)
+        public void CrearPlatoDeComida(string nombrePlatoDeComida, Dictionary<Producto, int> ingredientes, TimeSpan timpoDePreparacion)
         {
             PlatoDeComida nuevoPlato = new PlatoDeComida(nombrePlatoDeComida, ingredientes, timpoDePreparacion);
             _platosDeComida.Add(nuevoPlato);
@@ -33,5 +34,6 @@ namespace TP_restaurante.Clases_restaurante
             EliminarPlatoDeComida(nombrePlatoDeComida);
             CrearPlatoDeComida(nombrePlatoDeComida, ingredientes, timpoDePreparacion);
         }
+        */
     }
 }

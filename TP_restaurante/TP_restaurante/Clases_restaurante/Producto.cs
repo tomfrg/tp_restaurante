@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace TP_restaurante.Clases_restaurante
 {
@@ -34,6 +35,20 @@ namespace TP_restaurante.Clases_restaurante
                 }
             }
         }
+        public bool UsarStock(int stockUsado)
+        {
+            if ( _stock < stockUsado)
+            {
+                MessageBox.Show("Si utiliza esa cantidad el stock quedaria en negativo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            else
+            {
+                _stock = _stock - stockUsado;
+                return true;
+            }
+        }
+
         public override string ToString()
         {
             return $"{Stock} - {Nombre}";
