@@ -83,6 +83,7 @@
     <Compile Include="Clases_restaurante\PlatoDeComida.cs" />
     <Compile Include="Clases_restaurante\Producto.cs" />
     <Compile Include="Clases_restaurante\Proveedor.cs" />
+    <Compile Include="Clases_restaurante\Restaurante.cs" />
     <Compile Include="Cocinero\FormCocinero.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +126,7 @@
     <Compile Include="Encargado\FormEncargado.Designer.cs">
       <DependentUpon>FormEncargado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Hardcoreo.cs" />
     <Compile Include="Mesero\FormMesero.cs">
       <SubType>Form</SubType>
     </Compile>

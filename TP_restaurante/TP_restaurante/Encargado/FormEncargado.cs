@@ -14,56 +14,49 @@ namespace TP_restaurante
 {
     public partial class FormEncargado : Form
     {
-        private Empleado _usuario;
+        private Empleado _empleado;
 
-        private Empleado Usuario
-        {
-            get { return _usuario; }
-            set { _usuario = value; }
-        }
-        public FormEncargado(Empleado usuario)
+        public FormEncargado(Empleado empleado)
         {
             InitializeComponent();
-            Usuario = usuario;
-            Saludar();
+            _empleado = empleado;
+            CargarProductosEnListBox();
         }
-        public FormEncargado()
-        {
-            InitializeComponent();
-        }
-
-        private void FormEncargado_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        public void Saludar()
-        {
-            labelUsuario.Text = $"Bienvenido {Usuario._nombre} {Usuario._apellido}";
-        }
-
         private void buttonCargaProducto_Click(object sender, EventArgs e)
         {
-            FormAgregarProducto formAgregarProducto = new FormAgregarProducto(this, Usuario);
+            FormAgregarProducto formAgregarProducto = new FormAgregarProducto(this, _empleado);
             formAgregarProducto.Show();
         }
-        public void AgregarProductoAlListBox(Producto producto)
+        public void AgregarProducto(string productoNombre, int cantidadProductoInt) //agrega producto
         {
-            listBoxProductos.Items.Add(producto);
+            Producto producto = new Producto(productoNombre, cantidadProductoInt, 1);
+            if (Almacen.AlmacenarProducto(producto))
+            {
+                listBoxProductos.Items.Add(producto);
+            }
+            else
+            {
+                MessageBox.Show("El producto ya existe en el almacén.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
-        public void AgregarProductoALista(Producto producto)
-        {
-            Almacen.AlmacenarProducto(producto);    
-        }
-
-        private void listBoxProductos_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonEliminarProducto_Click(object sender, EventArgs e)
         {
-            listBoxProductos.Items.Remove(listBoxProductos.SelectedItem);
+            Producto productoSeleccionado = listBoxProductos.SelectedItem as Producto;
+
+            if (productoSeleccionado != null)
+            {
+                listBoxProductos.Items.Remove(productoSeleccionado);
+                Almacen.EliminarProducto(productoSeleccionado);
+            }
+        }
+        public void CargarProductosEnListBox()
+        {
+            listBoxProductos.Items.Clear(); // Limpiar el ListBox antes de agregar nuevos productos
+
+            foreach (var producto in Almacen.listaDeProductos)
+            {
+                listBoxProductos.Items.Add(producto);
+            }
         }
 
         private void buttonModificarProducto_Click(object sender, EventArgs e)
@@ -88,5 +81,16 @@ namespace TP_restaurante
             form1.Show();
             this.Hide();
         }
+
+        #region Métodos privados
+        private void listBoxProductos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void FormEncargado_Load(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
     }
 }

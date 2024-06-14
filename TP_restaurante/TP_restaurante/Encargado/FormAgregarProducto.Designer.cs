@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonAgregarProducto = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxCantidadProducto = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,15 +39,15 @@
             this.buttonAtras = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonAgregarProducto
             // 
-            this.button1.Location = new System.Drawing.Point(12, 236);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonAgregarProducto.Location = new System.Drawing.Point(12, 236);
+            this.buttonAgregarProducto.Name = "buttonAgregarProducto";
+            this.buttonAgregarProducto.Size = new System.Drawing.Size(121, 23);
+            this.buttonAgregarProducto.TabIndex = 2;
+            this.buttonAgregarProducto.Text = "Agregar";
+            this.buttonAgregarProducto.UseVisualStyleBackColor = true;
+            this.buttonAgregarProducto.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -136,7 +136,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxCantidadProducto);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonAgregarProducto);
             this.Name = "FormAgregarProducto";
             this.Text = "FormAgregarProducto";
             this.Load += new System.EventHandler(this.FormAgregarProducto_Load);
@@ -146,7 +146,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonAgregarProducto;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxCantidadProducto;
         private System.Windows.Forms.Label label2;

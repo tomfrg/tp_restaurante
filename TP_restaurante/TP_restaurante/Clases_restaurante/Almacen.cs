@@ -13,9 +13,17 @@ namespace TP_restaurante.Clases_restaurante
         {
             get { return listaDeProductos; }
         }
-        public static void AlmacenarProducto(Producto producto)
+        public static bool AlmacenarProducto(Producto producto)
         {
-            listaDeProductos.Add(producto);
+            if (listaDeProductos.Contains(producto))
+            {
+                return false;
+            }
+            else
+            {
+                listaDeProductos.Add(producto);
+                return true;
+            }
         }
         public static void ConsultarStock()
         {
@@ -35,7 +43,12 @@ namespace TP_restaurante.Clases_restaurante
                 Mostrar(item.Nombre, item.Stock);
             }
         }
-        
+        public static bool EliminarProducto(Producto producto)
+        {
+            return listaDeProductos.Remove(producto);
+        }
+
+
     }
 }
 

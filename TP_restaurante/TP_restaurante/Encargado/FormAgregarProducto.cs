@@ -16,60 +16,65 @@ namespace TP_restaurante.Encargado
     public partial class FormAgregarProducto : Form
     {
         private FormEncargado _formEncargado;
-        private Empleado _usuario;
+        private Empleado _empleado;
 
-        public FormAgregarProducto(FormEncargado formEncargado, Empleado usuario)
+        public FormAgregarProducto(FormEncargado formEncargado, Empleado empleado)
         {
             InitializeComponent();
             _formEncargado = formEncargado;
-            _usuario = usuario;
+            _empleado = empleado;
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormAgregarProducto_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) // agregar producto
         {
             string productoNombre = comboBoxProducto.Text; 
             string cantidadProducto = textBoxCantidadProducto.Text;
 
             if (int.TryParse(cantidadProducto, out int cantidadProductoInt))
             {
-                Producto producto = new Producto(productoNombre, cantidadProductoInt, 1);
-
-                _formEncargado.AgregarProductoAlListBox(producto);
+                _formEncargado.AgregarProducto(productoNombre, cantidadProductoInt);
 
                 this.Hide();
             }
             else
             {
-                // Muestra un mensaje de error si la cantidad no es un número válido
                 MessageBox.Show("Por favor, ingrese una cantidad válida.", "Error de entrada", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
+        private void buttonAtras_Click(object sender, EventArgs e)
+        {
+            FormEncargado formEncargado = new FormEncargado(_empleado);
+            formEncargado.Show();
+            this.Hide();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void FormAgregarProducto_Load(object sender, EventArgs e)
+        {
+
+        }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
-
         private void textBoxProducto_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void buttonAtras_Click(object sender, EventArgs e)
-        {
-            FormEncargado formEncargado = new FormEncargado();
-            formEncargado.Show();
-            this.Hide();
         }
     }
 }

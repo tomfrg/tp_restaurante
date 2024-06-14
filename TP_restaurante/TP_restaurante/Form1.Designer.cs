@@ -34,6 +34,7 @@
             this.buttonEliminar = new System.Windows.Forms.Button();
             this.buttonIngresar = new System.Windows.Forms.Button();
             this.buttonAgregarUsuario = new System.Windows.Forms.Button();
+            this.buttonHardcorear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label6
@@ -92,11 +93,22 @@
             this.buttonAgregarUsuario.UseVisualStyleBackColor = true;
             this.buttonAgregarUsuario.Click += new System.EventHandler(this.buttonAgregarUsuario_Click);
             // 
+            // buttonHardcorear
+            // 
+            this.buttonHardcorear.Location = new System.Drawing.Point(110, 416);
+            this.buttonHardcorear.Name = "buttonHardcorear";
+            this.buttonHardcorear.Size = new System.Drawing.Size(75, 23);
+            this.buttonHardcorear.TabIndex = 19;
+            this.buttonHardcorear.Text = "Hardcorear";
+            this.buttonHardcorear.UseVisualStyleBackColor = true;
+            this.buttonHardcorear.Click += new System.EventHandler(this.buttonHardcorear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(385, 451);
+            this.Controls.Add(this.buttonHardcorear);
             this.Controls.Add(this.buttonAgregarUsuario);
             this.Controls.Add(this.buttonIngresar);
             this.Controls.Add(this.buttonEliminar);
@@ -118,6 +130,7 @@
         private System.Windows.Forms.Button buttonEliminar;
         private System.Windows.Forms.Button buttonIngresar;
         private System.Windows.Forms.Button buttonAgregarUsuario;
+        private System.Windows.Forms.Button buttonHardcorear;
     }
 }
 
