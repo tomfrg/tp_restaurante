@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
 namespace TP_restaurante.Clases_restaurante
 {
     internal class Almacen
@@ -51,4 +52,5 @@ namespace TP_restaurante.Clases_restaurante
 
     }
 }
+/*
 

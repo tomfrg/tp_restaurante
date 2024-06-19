@@ -30,7 +30,7 @@ namespace TP_restaurante
         public void AgregarProducto(string productoNombre, int cantidadProductoInt) //agrega producto
         {
             Producto producto = new Producto(productoNombre, cantidadProductoInt, 1);
-            if (Almacen.AlmacenarProducto(producto))
+            if (Restaurante.AlmacenarProducto(producto))
             {
                 listBoxProductos.Items.Add(producto);
             }
@@ -46,14 +46,14 @@ namespace TP_restaurante
             if (productoSeleccionado != null)
             {
                 listBoxProductos.Items.Remove(productoSeleccionado);
-                Almacen.EliminarProducto(productoSeleccionado);
+                Restaurante.EliminarProducto(productoSeleccionado);
             }
         }
         public void CargarProductosEnListBox()
         {
             listBoxProductos.Items.Clear(); // Limpiar el ListBox antes de agregar nuevos productos
 
-            foreach (var producto in Almacen.listaDeProductos)
+            foreach (var producto in Restaurante.listaDeProductos)
             {
                 listBoxProductos.Items.Add(producto);
             }

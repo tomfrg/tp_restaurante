@@ -14,10 +14,49 @@ namespace TP_restaurante.Clases_restaurante
         public static List<Menu> _listaMenu = new List<Menu>();
         public static List<PlatoDeComida> _listaPlatos = new List<PlatoDeComida>();
         public static List<Proveedor> _listaProveedores = new List<Proveedor>();
+        public static List<Producto> listaDeProductos = new List<Producto>();
         public static int _cantidadDeMesas;
         public static List<PlatoDeComida> ListaPlatos
         {
             get { return _listaPlatos; }
+        }
+        public static List<Producto> ListaDeProductos
+        {
+            get { return listaDeProductos; }
+        }
+        public static bool AlmacenarProducto(Producto producto)
+        {
+            if (listaDeProductos.Contains(producto))
+            {
+                return false;
+            }
+            else
+            {
+                listaDeProductos.Add(producto);
+                return true;
+            }
+        }
+        public static void ConsultarStock()
+        {
+            foreach (var item in listaDeProductos)
+            {
+                Mostrar(item.Nombre, item.Stock);
+            }
+        }
+        public static void Mostrar(string nombre, int cantidad)
+        {
+            Console.WriteLine($"{nombre}: {cantidad}");
+        }
+        public static void RetornarLista(List<Producto> listaDeProductos)
+        {
+            foreach (var item in listaDeProductos)
+            {
+                Mostrar(item.Nombre, item.Stock);
+            }
+        }
+        public static bool EliminarProducto(Producto producto)
+        {
+            return listaDeProductos.Remove(producto);
         }
         public static void AgregarProveedor(Proveedor proveedor)
         {

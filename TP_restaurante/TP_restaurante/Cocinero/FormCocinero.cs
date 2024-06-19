@@ -41,7 +41,7 @@ namespace TP_restaurante.Cocinero
                 string nombreProducto = comboBoxProducto.SelectedItem.ToString();
 
                 // Encontrar el objeto Producto correspondiente en la lista de productos
-                Producto productoElegido = Almacen.listaDeProductos.Find(p => p.Nombre == nombreProducto);
+                Producto productoElegido = Restaurante.listaDeProductos.Find(p => p.Nombre == nombreProducto);
 
                 if (productoElegido != null)
                 {
