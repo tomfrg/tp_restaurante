@@ -27,9 +27,14 @@ namespace tpRestauranteConsola.Clases
         private string _dirrecion;
         private List<Producto> _productoQueProvee;
         private MedioDePago _medioDePago;
-        private DiasDeEngrega _diaDeEntrega;
-        private double _dinero;
-        public Proveedor(string nombre, int cuit, string dirrecion, List<Producto> productoQueProvee, MedioDePago medioDePago, DiasDeEngrega diaDeEntrega)
+        private List<DiasDeEngrega> _diaDeEntrega;
+        private double _dinero = 0;
+        public double Dinero
+        {
+            get { return _dinero; }
+            set { _dinero = value; }
+        }
+        public Proveedor(string nombre, int cuit, string dirrecion, List<Producto> productoQueProvee, MedioDePago medioDePago, List<DiasDeEngrega> diaDeEntrega)
         {
             _nombre = nombre;
             _cuit = cuit;

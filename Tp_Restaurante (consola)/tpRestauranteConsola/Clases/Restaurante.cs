@@ -34,6 +34,19 @@ namespace tpRestauranteConsola.Clases
                 return true;
             }
         }
+        public static void PagarProveedor(double dinero, Proveedor proveedor)
+        {
+            proveedor.Dinero = proveedor.Dinero + dinero;
+        }
+        public static void SumarStockProducto(Producto producto, double stockIngresado)
+        {
+            producto.Stock = producto.Stock + stockIngresado;
+        }
+        public static double CalcularCoste(Producto producto, double stockIngresado)
+        {
+            double costeTotal = stockIngresado * producto.Precio;
+            return costeTotal;
+        }
         public static bool MostrarDinero(Empleado empleado)
         {
             if (empleado._rol == RolesEmpleados.Encargado)
@@ -59,12 +72,27 @@ namespace tpRestauranteConsola.Clases
                 return true;
             }
         }
-        public static bool ComprarProducto(Producto producto, double stockIngresado)
+        public static bool ComprarProducto(Producto producto, double stockIngresado, Proveedor proveedor)
         {
-            double costeTotal = stockIngresado * producto.Precio;
-            if (QuitarDinero(costeTotal))
+            double coste = CalcularCoste(producto, stockIngresado);
+            if (QuitarDinero(coste))
             {
-                producto.Stock = producto.Stock + stockIngresado;
+                SumarStockProducto(producto, stockIngresado);
+                PagarProveedor(coste, proveedor);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static bool ComprarProducto(Producto producto, double stockIngresado, Proveedor proveedor, )
+        {
+            double coste = CalcularCoste(producto, stockIngresado);
+            if (QuitarDinero(coste))
+            {
+                SumarStockProducto(producto, stockIngresado);
+                PagarProveedor(coste, proveedor);
                 return true;
             }
             else

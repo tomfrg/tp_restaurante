@@ -17,6 +17,7 @@ namespace tpRestauranteConsola
             Producto huevo = new Producto("huevo", 300);
             Producto huevo2 = new Producto("huevo", 600);
             Producto harina = new Producto("harina", 200);
+            Producto leche = new Producto("leche", 150);
 
             Restaurante.AgregarProducto(carne);
             Restaurante.AgregarProducto(carne);
@@ -24,6 +25,7 @@ namespace tpRestauranteConsola
             Restaurante.AgregarProducto(huevo);
             Restaurante.AgregarProducto(huevo2);
             Restaurante.AgregarProducto(harina);
+            Restaurante.AgregarProducto(leche);
             #endregion
 
             #region Empleados
@@ -78,18 +80,28 @@ namespace tpRestauranteConsola
             #endregion
 
             #region Proveedor
-            Proveedor proveedor = new Proveedor();
+            List<DiasDeEngrega> diasDeEntregaMarolio = new List<DiasDeEngrega> { DiasDeEngrega.Lunes, DiasDeEngrega.Jueves };
+            List<Producto> productosMarolio = new List<Producto> { carne, huevo, harina ,panRallado };
+
+            List<DiasDeEngrega> diasDeEntregaSancor = new List<DiasDeEngrega> { DiasDeEngrega.Miercoles };
+            List<Producto> productosSancor = new List<Producto> { leche };
+
+            Proveedor Marolio = new Proveedor("Marolio", 11342, "aca a la vuelta", productosMarolio, MedioDePago.Contado, diasDeEntregaMarolio);
+            Proveedor Sancor = new Proveedor("Sancor", 45345, "cerca", productosSancor, MedioDePago.Tarjeta, diasDeEntregaSancor);
 
             #endregion
             //--------------------------------------------------
+            Console.WriteLine(Marolio.Dinero);
+            Console.WriteLine(Sancor.Dinero);
             Restaurante.MostrarDinero(tomi);
             Restaurante.IngresarDinero(100000);
             Restaurante.MostrarDinero(tomi);
 
-            Restaurante.ComprarProducto(huevo, 5);
-            Restaurante.ComprarProducto(carne, 15);
-            Restaurante.ComprarProducto(panRallado, 30);
-            Restaurante.ComprarProducto(harina, 20);
+            Restaurante.ComprarProducto(huevo, 5, Marolio);
+            Restaurante.ComprarProducto(carne, 15, Marolio);
+            Restaurante.ComprarProducto(panRallado, 30, Marolio);
+            Restaurante.ComprarProducto(harina, 20, Marolio);
+            Restaurante.ComprarProducto(leche, 20, Sancor);
 
 
             Restaurante.MostrarStockProductos(mohamed);
@@ -103,6 +115,8 @@ namespace tpRestauranteConsola
             Restaurante.MostrarStockProductos(tomi);
 
             Restaurante.MostrarDinero(tomi);
+            Console.WriteLine(Marolio.Dinero);
+            Console.WriteLine(Sancor.Dinero);
         }
     }
 }
