@@ -24,21 +24,36 @@ namespace TpRestauranteActualizado.Clases.Empleados
         }
         public void ComprarProducto(Producto producto, double stockIngresado, Proveedor proveedor)
         {
-            Restaurante.IngresarDeuda(proveedor.CalcularCosteProducto(producto, stockIngresado));
+            double costeProducto = proveedor.CalcularCosteProducto(producto, stockIngresado);
+            IngresarDeudaRestaurante(costeProducto);
             IngresarStockProducto(producto, stockIngresado);
-            Restaurante.AgregarProducto(producto);
+            proveedor.IngresarDineroQueEsperaRecibir(costeProducto);
         }
         private void IngresarStockProducto(Producto producto, double stockIngresado)
         {
             producto.Stock = stockIngresado + producto.Stock;
         }
-        public void PagarProveedor(double dinero, Proveedor proveedor)
+        public void PagarProveedor(Proveedor proveedor)
         {
-            proveedor.IngresarDineroProveedor(dinero);
-            Restaurante.QuitarDinero(dinero);
-            Restaurante.QuitarDeuda(dinero);
+            double deudaProveedor = proveedor.DineroQueEsperaRecibir;
+            if (Restaurante.QuitarDinero(deudaProveedor))
+            {
+                proveedor.IngresarDinero(deudaProveedor);
+                Restaurante.QuitarDeuda(deudaProveedor);
+            }
+            else
+            {
+                Console.WriteLine("No se puede pagar al proveedor, saldo insuficiente.");
+            }
         }
-
+        public void IngresarDinero(double dinero)
+        {
+            Restaurante.Dinero = dinero + Restaurante.Dinero;
+        }
+        private void IngresarDeudaRestaurante(double dinero)
+        {
+            Restaurante.Deuda = dinero + Restaurante.Deuda;
+        }
 
 
 
@@ -54,18 +69,32 @@ namespace TpRestauranteActualizado.Clases.Empleados
         {
             Console.WriteLine($"$ {Restaurante.Dinero}");
         }
-        public void MostrarStockProducto()
+        public void MostrarStockCompras()
         {
-            foreach (var ingredientes in Restaurante.ListaDeProductos)
+            foreach (var items in Menu.ListaDelEnMenu)
             {
-                Console.WriteLine($"{ingredientes.Stock} {ingredientes.Nombre}");
+                Console.WriteLine($"{items.Stock} {items.Nombre}");
+            }
+        }
+        public void MostrarPrecioCompras()
+        {
+            foreach (var items in Menu.ListaDelEnMenu)
+            {
+                Console.WriteLine($"${items.Precio} {items.Nombre}");
             }
         }
         public void MostrarStockProductos()
         {
-            foreach (var ingredientes in Restaurante.ListaDeProductos)
+            foreach (var items in Restaurante.ListaDeProductos)
             {
-                Console.WriteLine($"{ingredientes.Stock} {ingredientes.Nombre}");
+                Console.WriteLine($"{items.Stock} {items.Nombre}");
+            }
+        }
+        public void MostrarPrecioProductos()
+        {
+            foreach (var items in Restaurante.ListaDeProductos)
+            {
+                Console.WriteLine($"${items.Precio} {items.Nombre}");
             }
         }
         public bool EliminarProducto(Producto producto)

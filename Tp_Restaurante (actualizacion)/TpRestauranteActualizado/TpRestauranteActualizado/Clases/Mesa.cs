@@ -34,12 +34,12 @@ namespace TpRestauranteActualizado.Clases
         {
             foreach(var item in PedidoDeCliente)
             {
-                CosteTotal = item.Key.Precio + CosteTotal;
+                CosteTotal = (item.Key.Precio * item.Value) + CosteTotal;
             }
         }
         public void MostrarCosteTotal()
         {
-            Console.WriteLine($" coste total : {CosteTotal}");
+            Console.WriteLine($"-Coste total: ${CosteTotal}");
         }
         public void MostrarPedidol()
         {

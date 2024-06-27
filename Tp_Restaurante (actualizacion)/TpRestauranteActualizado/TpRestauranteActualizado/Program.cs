@@ -12,6 +12,11 @@ namespace TpRestauranteActualizado
     {
         static void Main(string[] args)
         {
+            //-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+            // DECLARACIONES DE OBJETOS
+            //-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+            //--------------------------------------------------
             #region Productos
             Ingrediente carne = new Ingrediente("carne", 560);
             Ingrediente panRallado = new Ingrediente("pan", 90);
@@ -33,6 +38,7 @@ namespace TpRestauranteActualizado
             Restaurante.AgregarProducto(cocaCola);
             #endregion
 
+            //--------------------------------------------------
             #region Empleados
             Encargado tomi = new Encargado("Tomas", "Fragnito", "esme123", 1139310243,14000);
             Encargado tomi2 = new Encargado("Tomas", "Fragnito", "esme123", 1139310243, 14000);
@@ -51,6 +57,7 @@ namespace TpRestauranteActualizado
             Restaurante.AgregarEmpleado(mohamed);
             #endregion
 
+            //--------------------------------------------------
             #region PlatosDeComida
             Dictionary<Ingrediente, double> ingredientesMilanesa = new Dictionary<Ingrediente, double>
             {
@@ -96,6 +103,7 @@ namespace TpRestauranteActualizado
             Menu.AgregarAlMenu(leche);
             #endregion
 
+            //--------------------------------------------------
             #region Proveedor
             List<DiasDeEngrega> diasDeEntregaMarolio = new List<DiasDeEngrega> { DiasDeEngrega.Lunes, DiasDeEngrega.Jueves };
             List<Producto> productosMarolio = new List<Producto> { carne, huevo, harina, panRallado };
@@ -112,21 +120,48 @@ namespace TpRestauranteActualizado
 
             #endregion
 
+            //--------------------------------------------------
             #region Mesa
-            List<PlatoDeComida> listaPlatosDeComida = new List<PlatoDeComida> { milanesa };
+            Dictionary<IItemMenu, double> pedidoDelCliente = new Dictionary<IItemMenu, double>
+            {
+                {milanesa, 4},
+                {leche, 2},
+            };
+            Mesa mesa1 = new Mesa(1, 5, pedidoDelCliente);
+            #endregion
 
-            //Mesa mesa = new Mesa(1,pablo, );
+
+            //-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+            // FUNCIONAMIENTO DEL CODIGO
+            //-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+            //--------------------------------------------------
+            #region MUESTRA DEL ESTADO INICIAL DEL RESTAURANTE
+            Console.WriteLine("---ESTADO INICIAL DEL RESTAURANTE---");
+            tomi.MostrarDineroRestaurante();
+            Console.WriteLine("DINERO INGRESADO:");
+            tomi.IngresarDinero(100000);
+            tomi.MostrarDineroRestaurante();
+            Console.WriteLine("LISTA EMPLEADOS:");
+            Restaurante.MostrarEmpleados();
+
+            Console.WriteLine("");
             #endregion
 
             //--------------------------------------------------
+            #region STOCK DE PRODUCTOS
+            Console.WriteLine("---STOCK INICIAL DE PRODUCTOS---");
+            tomi.MostrarStockProductos();
+            Console.WriteLine("");
+            Console.WriteLine("---PRECIO DE PRODUCTOS---");
+            tomi.MostrarPrecioProductos();
 
-            Marolio.MostrarDinero();
-            Sancor.MostrarDinero();
-            
-            tomi.MostrarDineroRestaurante();
-            Restaurante.IngresarDinero(100000);
-            tomi.MostrarDineroRestaurante();
+            Console.WriteLine("");
+            #endregion
 
+            //--------------------------------------------------
+            #region COMPRA DE PRODUCTOS
+            Console.WriteLine("---COMPRAR PRODUCTOS------");
             tomi.ComprarProducto(huevo, 5, Marolio);
             tomi.ComprarProducto(carne, 15, Marolio);
             tomi.ComprarProducto(panRallado, 30, Marolio);
@@ -135,44 +170,117 @@ namespace TpRestauranteActualizado
             tomi.ComprarProducto(cocaCola, 10, bebidasPuntoCom);
             tomi.ComprarProducto(vermu, 10, bebidasPuntoCom);
 
-            Console.WriteLine("-----------------------");
-            tomi.MostrarStockProducto();
-            Console.WriteLine("-----------------------");
+            Console.WriteLine("");
+            #endregion
 
-            tomi.MostrarDineroRestaurante();
-            tomi.MostrarDeudaRestaurante();
-            Console.WriteLine("-----------------------");
+            //--------------------------------------------------
+            #region STOCK DE PRODUCTOS
+            Console.WriteLine("---STOCK DE PRODUCTOS---");
+            tomi.MostrarStockProductos();
+            Console.WriteLine("");
+            Console.WriteLine("---PRECIOS DE PRODUCTOS---");
+            tomi.MostrarPrecioProductos();
 
-            tomi.EliminarProducto(harina);
+            Console.WriteLine("");
+            #endregion
 
-            tomi.MostrarStockProducto();
-
-            tomi.MostrarDineroRestaurante();
-            Marolio.MostrarDinero();
-            Sancor.MostrarDinero();
-            Console.WriteLine("------------------------------------");
+            //--------------------------------------------------
+            #region COCINAR PLATOS DE COMIDA
+            Console.WriteLine("---COCINAR DE PLATOS DE COMIDA------");
             milanesa.CocinarPlatoDeComida(10);
-            milanesa.MostrarStock();
-            tomi.MostrarStockProducto();
-            Console.WriteLine("------------------------------------");
-            Menu.MostrarMenu();
+
+            Console.WriteLine("");
+            #endregion
+
+            //--------------------------------------------------
+            #region STOCK DE PLATOS DE COMIDA
+            Console.WriteLine("---STOCK DE PLATOS DE COMIDA------");
+            Menu.MostrarStockDelMenu();
+
+            Console.WriteLine("");
+            #endregion
+
+            //--------------------------------------------------
+            #region ESTADO DE RESTAURANTE
+            Console.WriteLine("---ESTADO DE RESTAURANTE------");
+            Console.WriteLine("DINERO");
             tomi.MostrarDineroRestaurante();
-            Console.WriteLine("------------------------------------");
-            Dictionary<IItemMenu, double> pedidoDelCliente = new Dictionary<IItemMenu, double>
-            {
-                {milanesa, 4},
-                {leche, 2},
-            };
-            Mesa mesa1 = new Mesa(1, 5, pedidoDelCliente);
+            Console.WriteLine("DEUDA");
+            tomi.MostrarDeudaRestaurante();
+
+            Console.WriteLine("");
+            #endregion
+
+            //--------------------------------------------------
+
+            #region PAGAR A LOS PROVEEDORES
+            Console.WriteLine("---PAGAR A LOS PROVEEDORES------");
+            Marolio.MostrarDinero();
+            Console.WriteLine("pagar al proveedor");
+            tomi.PagarProveedor(Marolio);
+            tomi.PagarProveedor(bebidasPuntoCom);
+            tomi.PagarProveedor(Sancor);
+
+            Console.WriteLine("el proveedor cobro");
+            Marolio.MostrarDinero();
+            bebidasPuntoCom.MostrarDinero();
+            Sancor.MostrarDinero();
+
+            Console.WriteLine("");
+            Console.WriteLine("ESTADO DE RESTAURANTE");
+            Console.WriteLine("DINERO");
+            tomi.MostrarDineroRestaurante();
+            Console.WriteLine("DEUDA");
+            tomi.MostrarDeudaRestaurante();
+
+            Console.WriteLine("");
+            #endregion
+
+            //--------------------------------------------------
+            #region MOSTRAR STOCK DE PRODUCTOS
+            Console.WriteLine("---MOSTRAR STOCK DE PRODUCTOS------");
+            tomi.MostrarStockCompras();
+
+            Console.WriteLine("");
+            #endregion
+
+            //--------------------------------------------------
+            #region MOSTRAR MENU
+
+            Console.WriteLine("---MOSTRAR MENU------");
+            Console.WriteLine("TODO EL MENU:");
+            Menu.MostrarStockDelMenu();
+
+            Console.WriteLine("");
+            Console.WriteLine("PRECIOS DEL MENU:");
+            Menu.MostrarPrecioDelMenu();
+
+            Console.WriteLine("");
+            #endregion
+
+            //--------------------------------------------------
+            #region MESAS ASIGNADAS
+
+            Console.WriteLine("---MESAS ASIGNADAS------");
             pablo.ServirPedidoDelCliente(mesa1);
             pablo.CobrarMesa(mesa1);
+            Console.WriteLine("COSTE TOTAL DE LA MESA:");
             mesa1.MostrarCosteTotal();
-            Console.WriteLine("------------------------------------");
-            Menu.MostrarMenu();
-            tomi.MostrarDineroRestaurante();
-            Menu.MostrarPrecio(milanesa);
-            Menu.MostrarPrecio(leche);
             mesa1.MostrarPedidol();
+
+            Console.WriteLine("");
+            #endregion
+
+            //--------------------------------------------------
+            #region ESTADO DE RESTAURANTE
+            Console.WriteLine("---ESTADO DE RESTAURANTE------");
+            Console.WriteLine("DINERO");
+            tomi.MostrarDineroRestaurante();
+            Console.WriteLine("DEUDA");
+            tomi.MostrarDeudaRestaurante();
+
+            Console.WriteLine("");
+            #endregion
         }
     }
 }

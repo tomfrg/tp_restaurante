@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -48,11 +49,18 @@ namespace TpRestauranteActualizado.Clases
             return true;
         }
 
-        public static void MostrarMenu()
+        public static void MostrarStockDelMenu()
         {
             foreach (var item in _listaDelEnMenu)
             {
                 Console.WriteLine($"{item.Stock} - {item.Nombre}");
+            }
+        }
+        public static void MostrarPrecioDelMenu()
+        {
+            foreach (var item in _listaDelEnMenu)
+            {
+                Console.WriteLine($"${item.Precio} - {item.Nombre}");
             }
         }
         public static void MostrarPrecio(IItemMenu cosito)

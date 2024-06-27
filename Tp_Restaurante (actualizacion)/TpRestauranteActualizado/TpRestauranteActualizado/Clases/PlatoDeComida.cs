@@ -77,13 +77,5 @@ namespace TpRestauranteActualizado.Clases
                 Precio = item.Key.Precio * item.Value;
             }
         }
-        public void MostrarStock()
-        {
-            Console.WriteLine(Stock);
-        }
-        public void MostrarPrecio()
-        {
-            Console.WriteLine(Precio);
-        }
     }
 }

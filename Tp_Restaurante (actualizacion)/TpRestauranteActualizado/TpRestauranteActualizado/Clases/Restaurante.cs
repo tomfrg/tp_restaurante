@@ -35,17 +35,13 @@ namespace TpRestauranteActualizado.Clases
         }
 
         //--------------------------------------------------------------------------------
-        public static void IngresarDinero(double dinero)
-        {
-            Dinero = dinero + Dinero;
-        }
-        public static void IngresarDeuda(double dinero)
-        {
-            Deuda = dinero + Deuda;
-        }
         public static void QuitarDeuda(double dinero)
         {
-            Deuda = dinero - Deuda;
+            Deuda = Deuda - dinero;
+            if (Deuda < 0)
+            {
+                Deuda = 0;
+            }
         }
         public static bool QuitarDinero(double dinero)
         {
@@ -121,6 +117,13 @@ namespace TpRestauranteActualizado.Clases
             {
                 _listaEmpleados.Remove(empleado);
                 return true;
+            }
+        }
+        public static void MostrarEmpleados()
+        {
+            foreach(var i in ListaEmpleados)
+            {
+                Console.WriteLine($"{i.Nombre} {i.Apellido}");
             }
         }
         //--------------------------------------------------------------------------------

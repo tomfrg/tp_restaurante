@@ -29,10 +29,16 @@ namespace TpRestauranteActualizado.Clases
         private MedioDePago _medioDePago;
         private List<DiasDeEngrega> _diaDeEntrega;
         private double _dinero = 0;
+        private double _dineroQueEsperaRecibir = 0;
         public double Dinero
         {
             get { return _dinero; }
             set { _dinero = value; }
+        }
+        public double DineroQueEsperaRecibir
+        {
+            get { return _dineroQueEsperaRecibir; }
+            set { _dineroQueEsperaRecibir = value; }
         }
         public string Nombre
         {
@@ -51,11 +57,16 @@ namespace TpRestauranteActualizado.Clases
         {
 
         }
-        public void IngresarDineroProveedor(double dinero)
+        public void IngresarDinero(double dinero)
         {
             Dinero = dinero + Dinero;
+            DineroQueEsperaRecibir = dinero - DineroQueEsperaRecibir;
         }
-        public double CalcularCosteProducto(Producto producto, double stockIngresado) // cambiar calcular precio dentro de clase producto y hacer algo parecido comno en plato de comifa
+        public void IngresarDineroQueEsperaRecibir(double dinero)
+        {
+            DineroQueEsperaRecibir = dinero + DineroQueEsperaRecibir;
+        }
+        public double CalcularCosteProducto(Producto producto, double stockIngresado) 
         {
             double costeTotal = stockIngresado * producto.Precio;
             return costeTotal;
