@@ -1,0 +1,7 @@
+C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp_restaurante\Tp_Restaurante (actualizacion)\TpRestauranteActualizado\TpRestauranteActualizado\obj\Debug\TpRestauranteActualizado.csproj.AssemblyReference.cache
+C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp_restaurante\Tp_Restaurante (actualizacion)\TpRestauranteActualizado\TpRestauranteActualizado\obj\Debug\TpRestauranteActualizado.csproj.CoreCompileInputs.cache
+C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp_restaurante\Tp_Restaurante (actualizacion)\TpRestauranteActualizado\TpRestauranteActualizado\bin\Debug\TpRestauranteActualizado.exe.config
+C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp_restaurante\Tp_Restaurante (actualizacion)\TpRestauranteActualizado\TpRestauranteActualizado\bin\Debug\TpRestauranteActualizado.exe
+C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp_restaurante\Tp_Restaurante (actualizacion)\TpRestauranteActualizado\TpRestauranteActualizado\bin\Debug\TpRestauranteActualizado.pdb
+C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp_restaurante\Tp_Restaurante (actualizacion)\TpRestauranteActualizado\TpRestauranteActualizado\obj\Debug\TpRestauranteActualizado.exe
+C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp_restaurante\Tp_Restaurante (actualizacion)\TpRestauranteActualizado\TpRestauranteActualizado\obj\Debug\TpRestauranteActualizado.pdb

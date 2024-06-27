@@ -1,0 +1,156 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TpRestauranteActualizado.Clases
+{
+    internal static class Restaurante
+    {
+        private static List<Empleado> _listaEmpleados = new List<Empleado>();
+        private static List<Proveedor> _listaProveedores = new List<Proveedor>();
+        private static List<Producto> _listaDeProductos = new List<Producto>();
+        private static List<Mesa> _listaDeMesas = new List<Mesa>();
+        private static double _dinero = 0;
+        private static double _deuda = 0;
+        public static List<Producto> ListaDeProductos
+        { 
+            get { return _listaDeProductos; } 
+            set { _listaDeProductos = value;}
+        }
+        public static List<Proveedor> ListaProveedores
+        { get { return _listaProveedores; } }
+        public static List<Empleado> ListaEmpleados
+        { get { return _listaEmpleados; } }
+        public static double Dinero
+        {
+            get { return _dinero; } 
+            set { _dinero = value; }
+        }
+        public static double Deuda
+        { 
+            get { return _deuda; } 
+            set { _deuda = value; }
+        }
+
+        //--------------------------------------------------------------------------------
+        public static void IngresarDinero(double dinero)
+        {
+            Dinero = dinero + Dinero;
+        }
+        public static void IngresarDeuda(double dinero)
+        {
+            Deuda = dinero + Deuda;
+        }
+        public static void QuitarDeuda(double dinero)
+        {
+            Deuda = dinero - Deuda;
+        }
+        public static bool QuitarDinero(double dinero)
+        {
+            if (dinero > Dinero)
+            {
+                Console.WriteLine("Saldo insuficiente");
+                return false;
+            }
+            else
+            {
+                Dinero = Dinero - dinero;
+                return true;
+            }
+        }
+        //--------------------------------------------------------------------------------
+        public static bool AgregarProducto(Producto producto)
+        {
+            foreach (var productos in ListaDeProductos)
+            {
+                if (productos.Nombre == producto.Nombre)
+                {
+                    return false;
+                }
+            }
+            ListaDeProductos.Add(producto);
+            return true;
+        }
+        //--------------------------------------------------------------------------------
+        public static bool AgregarProveedor(Proveedor proveedor)
+        {
+            foreach (var proveedores in ListaProveedores)
+            {
+                if (proveedores.Nombre == proveedor.Nombre)
+                {
+                    return false;
+                }
+            }
+            ListaProveedores.Add(proveedor);
+            return true;
+        }
+        public static bool EliminarProveedor(Proveedor proveedor)
+        {
+            if (_listaProveedores.Contains(proveedor))
+            {
+                return false;
+            }
+            else
+            {
+                _listaProveedores.Remove(proveedor);
+                return true;
+            }
+        }
+        //--------------------------------------------------------------------------------
+        public static bool AgregarEmpleado(Empleado empleado)
+        {
+            foreach (var empleados in ListaEmpleados)
+            {
+                if (empleados.Nombre == empleado.Nombre)
+                {
+                    return false;
+                }
+            }
+            ListaEmpleados.Add(empleado);
+            return true;
+        }
+        public static bool EliminarEmpleado(Empleado empleado)
+        {
+            if (_listaEmpleados.Contains(empleado))
+            {
+                return false;
+            }
+            else
+            {
+                _listaEmpleados.Remove(empleado);
+                return true;
+            }
+        }
+        //--------------------------------------------------------------------------------
+        /*
+        public static bool AgregarPlatoDeComida(PlatoDeComida platoDeComida)
+        {
+            foreach (var platos in ListaPlatoDeComida)
+            {
+                if (platos.Nombre == platoDeComida.Nombre)
+                {
+                    return false;
+                }
+            }
+            ListaPlatoDeComida.Add(platoDeComida);
+            return true;
+        }
+        public static bool EliminarPlatoDeComida(PlatoDeComida platoDeComida)
+        {
+            if (_listaPlatoDeComida.Contains(platoDeComida))
+            {
+                return false;
+            }
+            else
+            {
+                _listaPlatoDeComida.Remove(platoDeComida);
+                return true;
+            }
+        }
+        */
+        //--------------------------------------------------------------------------------
+
+    }
+}

@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\Tp_Restaurante (actualizacion)\\TpRestauranteActualizado\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7DE14A11-8EB0-48AB-8FD0-8E2E1619CFB2}|TpRestauranteActualizado\\TpRestauranteActualizado.csproj|c:\\users\\thomas\\desktop\\utn\\2\u00BA cuatrimestre\\tp-restaurante\\tp_restaurante\\tp_restaurante (actualizacion)\\tprestauranteactualizado\\tprestauranteactualizado\\clases\\mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DE14A11-8EB0-48AB-8FD0-8E2E1619CFB2}|TpRestauranteActualizado\\TpRestauranteActualizado.csproj|solutionrelative:tprestauranteactualizado\\clases\\mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DE14A11-8EB0-48AB-8FD0-8E2E1619CFB2}|TpRestauranteActualizado\\TpRestauranteActualizado.csproj|c:\\users\\thomas\\desktop\\utn\\2\u00BA cuatrimestre\\tp-restaurante\\tp_restaurante\\tp_restaurante (actualizacion)\\tprestauranteactualizado\\tprestauranteactualizado\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DE14A11-8EB0-48AB-8FD0-8E2E1619CFB2}|TpRestauranteActualizado\\TpRestauranteActualizado.csproj|solutionrelative:tprestauranteactualizado\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DE14A11-8EB0-48AB-8FD0-8E2E1619CFB2}|TpRestauranteActualizado\\TpRestauranteActualizado.csproj|C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\Tp_Restaurante (actualizacion)\\TpRestauranteActualizado\\tprestauranteactualizado\\clases\\empleados\\encargado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DE14A11-8EB0-48AB-8FD0-8E2E1619CFB2}|TpRestauranteActualizado\\TpRestauranteActualizado.csproj|solutionrelative:tprestauranteactualizado\\clases\\empleados\\encargado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DE14A11-8EB0-48AB-8FD0-8E2E1619CFB2}|TpRestauranteActualizado\\TpRestauranteActualizado.csproj|C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\Tp_Restaurante (actualizacion)\\TpRestauranteActualizado\\tprestauranteactualizado\\clases\\restaurante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DE14A11-8EB0-48AB-8FD0-8E2E1619CFB2}|TpRestauranteActualizado\\TpRestauranteActualizado.csproj|solutionrelative:tprestauranteactualizado\\clases\\restaurante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DE14A11-8EB0-48AB-8FD0-8E2E1619CFB2}|TpRestauranteActualizado\\TpRestauranteActualizado.csproj|c:\\users\\thomas\\desktop\\utn\\2\u00BA cuatrimestre\\tp-restaurante\\tp_restaurante\\tp_restaurante (actualizacion)\\tprestauranteactualizado\\tprestauranteactualizado\\clases\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DE14A11-8EB0-48AB-8FD0-8E2E1619CFB2}|TpRestauranteActualizado\\TpRestauranteActualizado.csproj|solutionrelative:tprestauranteactualizado\\clases\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DE14A11-8EB0-48AB-8FD0-8E2E1619CFB2}|TpRestauranteActualizado\\TpRestauranteActualizado.csproj|C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\Tp_Restaurante (actualizacion)\\TpRestauranteActualizado\\tprestauranteactualizado\\clases\\empleados\\mesero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DE14A11-8EB0-48AB-8FD0-8E2E1619CFB2}|TpRestauranteActualizado\\TpRestauranteActualizado.csproj|solutionrelative:tprestauranteactualizado\\clases\\empleados\\mesero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DE14A11-8EB0-48AB-8FD0-8E2E1619CFB2}|TpRestauranteActualizado\\TpRestauranteActualizado.csproj|c:\\users\\thomas\\desktop\\utn\\2\u00BA cuatrimestre\\tp-restaurante\\tp_restaurante\\tp_restaurante (actualizacion)\\tprestauranteactualizado\\tprestauranteactualizado\\clases\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DE14A11-8EB0-48AB-8FD0-8E2E1619CFB2}|TpRestauranteActualizado\\TpRestauranteActualizado.csproj|solutionrelative:tprestauranteactualizado\\clases\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DE14A11-8EB0-48AB-8FD0-8E2E1619CFB2}|TpRestauranteActualizado\\TpRestauranteActualizado.csproj|c:\\users\\thomas\\desktop\\utn\\2\u00BA cuatrimestre\\tp-restaurante\\tp_restaurante\\tp_restaurante (actualizacion)\\tprestauranteactualizado\\tprestauranteactualizado\\clases\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DE14A11-8EB0-48AB-8FD0-8E2E1619CFB2}|TpRestauranteActualizado\\TpRestauranteActualizado.csproj|solutionrelative:tprestauranteactualizado\\clases\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DE14A11-8EB0-48AB-8FD0-8E2E1619CFB2}|TpRestauranteActualizado\\TpRestauranteActualizado.csproj|c:\\users\\thomas\\desktop\\utn\\2\u00BA cuatrimestre\\tp-restaurante\\tp_restaurante\\tp_restaurante (actualizacion)\\tprestauranteactualizado\\tprestauranteactualizado\\clases\\platodecomida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DE14A11-8EB0-48AB-8FD0-8E2E1619CFB2}|TpRestauranteActualizado\\TpRestauranteActualizado.csproj|solutionrelative:tprestauranteactualizado\\clases\\platodecomida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\Tp_Restaurante (actualizacion)\\TpRestauranteActualizado\\TpRestauranteActualizado\\Clases\\Menu.cs",
+              "RelativeDocumentMoniker": "TpRestauranteActualizado\\Clases\\Menu.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\Tp_Restaurante (actualizacion)\\TpRestauranteActualizado\\TpRestauranteActualizado\\Clases\\Menu.cs",
+              "RelativeToolTip": "TpRestauranteActualizado\\Clases\\Menu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T23:03:06.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\Tp_Restaurante (actualizacion)\\TpRestauranteActualizado\\TpRestauranteActualizado\\Clases\\Producto.cs",
+              "RelativeDocumentMoniker": "TpRestauranteActualizado\\Clases\\Producto.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\Tp_Restaurante (actualizacion)\\TpRestauranteActualizado\\TpRestauranteActualizado\\Clases\\Producto.cs",
+              "RelativeToolTip": "TpRestauranteActualizado\\Clases\\Producto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T22:57:20.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PlatoDeComida.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\Tp_Restaurante (actualizacion)\\TpRestauranteActualizado\\TpRestauranteActualizado\\Clases\\PlatoDeComida.cs",
+              "RelativeDocumentMoniker": "TpRestauranteActualizado\\Clases\\PlatoDeComida.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\Tp_Restaurante (actualizacion)\\TpRestauranteActualizado\\TpRestauranteActualizado\\Clases\\PlatoDeComida.cs",
+              "RelativeToolTip": "TpRestauranteActualizado\\Clases\\PlatoDeComida.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T22:53:46.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Mesa.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\Tp_Restaurante (actualizacion)\\TpRestauranteActualizado\\TpRestauranteActualizado\\Clases\\Mesa.cs",
+              "RelativeDocumentMoniker": "TpRestauranteActualizado\\Clases\\Mesa.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\Tp_Restaurante (actualizacion)\\TpRestauranteActualizado\\TpRestauranteActualizado\\Clases\\Mesa.cs",
+              "RelativeToolTip": "TpRestauranteActualizado\\Clases\\Mesa.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T22:29:46.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Mesero.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\Tp_Restaurante (actualizacion)\\TpRestauranteActualizado\\TpRestauranteActualizado\\Clases\\Empleados\\Mesero.cs",
+              "RelativeDocumentMoniker": "TpRestauranteActualizado\\Clases\\Empleados\\Mesero.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\Tp_Restaurante (actualizacion)\\TpRestauranteActualizado\\TpRestauranteActualizado\\Clases\\Empleados\\Mesero.cs",
+              "RelativeToolTip": "TpRestauranteActualizado\\Clases\\Empleados\\Mesero.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAADEAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T21:37:41.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Proveedor.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\Tp_Restaurante (actualizacion)\\TpRestauranteActualizado\\TpRestauranteActualizado\\Clases\\Proveedor.cs",
+              "RelativeDocumentMoniker": "TpRestauranteActualizado\\Clases\\Proveedor.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\Tp_Restaurante (actualizacion)\\TpRestauranteActualizado\\TpRestauranteActualizado\\Clases\\Proveedor.cs",
+              "RelativeToolTip": "TpRestauranteActualizado\\Clases\\Proveedor.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAMwDIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T22:14:45.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Encargado.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\Tp_Restaurante (actualizacion)\\TpRestauranteActualizado\\TpRestauranteActualizado\\Clases\\Empleados\\Encargado.cs",
+              "RelativeDocumentMoniker": "TpRestauranteActualizado\\Clases\\Empleados\\Encargado.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\Tp_Restaurante (actualizacion)\\TpRestauranteActualizado\\TpRestauranteActualizado\\Clases\\Empleados\\Encargado.cs",
+              "RelativeToolTip": "TpRestauranteActualizado\\Clases\\Empleados\\Encargado.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAnwDwAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T21:38:54.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Restaurante.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\Tp_Restaurante (actualizacion)\\TpRestauranteActualizado\\TpRestauranteActualizado\\Clases\\Restaurante.cs",
+              "RelativeDocumentMoniker": "TpRestauranteActualizado\\Clases\\Restaurante.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\Tp_Restaurante (actualizacion)\\TpRestauranteActualizado\\TpRestauranteActualizado\\Clases\\Restaurante.cs",
+              "RelativeToolTip": "TpRestauranteActualizado\\Clases\\Restaurante.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAvwEYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T21:40:50.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\Tp_Restaurante (actualizacion)\\TpRestauranteActualizado\\TpRestauranteActualizado\\Program.cs",
+              "RelativeDocumentMoniker": "TpRestauranteActualizado\\Program.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\UTN\\2\u00BA CUATRIMESTRE\\TP-RESTAURANTE\\tp_restaurante\\Tp_Restaurante (actualizacion)\\TpRestauranteActualizado\\TpRestauranteActualizado\\Program.cs",
+              "RelativeToolTip": "TpRestauranteActualizado\\Program.cs",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAgwK4AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T21:36:38.014Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
