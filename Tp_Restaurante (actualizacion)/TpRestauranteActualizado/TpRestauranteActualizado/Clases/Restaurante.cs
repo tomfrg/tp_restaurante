@@ -1,13 +1,16 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TpRestauranteActualizado.Clases.Empleados;
 
 namespace TpRestauranteActualizado.Clases
 {
     internal static class Restaurante
     {
+        private static List<Empleado> _listadoEmpleadoPorPrioridad = new List<Empleado>();
         private static List<Empleado> _listaEmpleados = new List<Empleado>();
         private static List<Proveedor> _listaProveedores = new List<Proveedor>();
         private static List<Producto> _listaDeProductos = new List<Producto>();
@@ -23,6 +26,8 @@ namespace TpRestauranteActualizado.Clases
         { get { return _listaProveedores; } }
         public static List<Empleado> ListaEmpleados
         { get { return _listaEmpleados; } }
+        public static List<Empleado> ListaEmpleadosPorPrioridad
+        { get { return _listadoEmpleadoPorPrioridad; } }
         public static double Dinero
         {
             get { return _dinero; } 
@@ -56,6 +61,7 @@ namespace TpRestauranteActualizado.Clases
                 return true;
             }
         }
+
         //--------------------------------------------------------------------------------
         public static bool AgregarProducto(Producto producto)
         {
@@ -119,6 +125,46 @@ namespace TpRestauranteActualizado.Clases
                 return true;
             }
         }
+        public static void OrdenarEmpleadosPorPrioridad()
+        {
+            foreach(var i in ListaEmpleados)
+            {
+                if (i is Encargado) 
+                {
+                    ListaEmpleadosPorPrioridad.Add(i);
+                }
+            }
+            foreach (var i in ListaEmpleados)
+            {
+                if (i is Cocinero) 
+                {
+                    ListaEmpleadosPorPrioridad.Add(i);
+                }
+            }
+            foreach (var i in ListaEmpleados)
+            {
+                if (i is Mesero) 
+                {
+                    ListaEmpleadosPorPrioridad.Add(i);
+                }
+            }
+            foreach (var i in ListaEmpleados) 
+            {
+                if (i is Delivery) 
+                {
+                    ListaEmpleadosPorPrioridad.Add(i);
+                }
+            }
+        }
+        public static void MostrarSueldoTotalDeTodos()
+        {
+            double sueldoTotal = 0;
+            foreach(var i in ListaEmpleados)
+            {
+                sueldoTotal = sueldoTotal + i.Sueldo;
+            }
+            Console.WriteLine($"${sueldoTotal}");
+        }
         public static void MostrarEmpleados()
         {
             foreach(var i in ListaEmpleados)
@@ -126,7 +172,30 @@ namespace TpRestauranteActualizado.Clases
                 Console.WriteLine($"{i.Nombre} {i.Apellido}");
             }
         }
+        public static void MostrarEmpleadosQueue()
+        {
+            foreach (var i in ListaEmpleadosPorPrioridad)
+            {
+                Console.WriteLine($"{i.Nombre} {i.Apellido}");
+            }
+        }
         //--------------------------------------------------------------------------------
+        public static void MostrarLista<T>(List<T> list)
+        {
+            foreach (var i in list)
+            {
+                Console.WriteLine(i);
+            }
+        }
+        public static void MostrarQueue<T>(Queue<T> list)
+        {
+            foreach (var i in list)
+            {
+                Console.WriteLine(i);
+            }
+        }
+
+
         /*
         public static bool AgregarPlatoDeComida(PlatoDeComida platoDeComida)
         {

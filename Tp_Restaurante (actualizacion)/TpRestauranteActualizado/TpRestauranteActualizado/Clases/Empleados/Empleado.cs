@@ -12,6 +12,7 @@ namespace TpRestauranteActualizado.Clases
         private string _apellido;
         private string _direccion;
         private int _contacto;
+        private double _dinero;
         private double _sueldo;
 
         public Empleado(string nombre, string apellido, string direccion, int contacto, double sueldo)
@@ -28,6 +29,11 @@ namespace TpRestauranteActualizado.Clases
         { get { return _apellido; } }
         public double Sueldo
         { get { return _sueldo; } }
+        public double Dinero
+        { 
+            get { return _dinero; } 
+            set { _dinero = value; }
+        }
         public static bool operator ==(Empleado e1, Empleado e2)
         {
             if (ReferenceEquals(e1, null) && ReferenceEquals(e2, null))

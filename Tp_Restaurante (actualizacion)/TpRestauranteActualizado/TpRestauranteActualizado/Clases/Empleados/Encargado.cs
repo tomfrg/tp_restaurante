@@ -14,7 +14,6 @@ namespace TpRestauranteActualizado.Clases.Empleados
         private string _direccion;
         private int _contacto;
         private double _sueldo;
-
         public Encargado(string nombre, string apellido, string direccion, int contacto, double sueldo) : base( nombre,  apellido,  direccion,  contacto,  sueldo)
         {
             _nombre = nombre;
@@ -54,13 +53,56 @@ namespace TpRestauranteActualizado.Clases.Empleados
         {
             Restaurante.Deuda = dinero + Restaurante.Deuda;
         }
+        public bool EliminarProducto(Producto producto)
+        {
+            if (!Restaurante.ListaDeProductos.Contains(producto))
+            {
+                return false;
+            }
+            else
+            {
+                Restaurante.ListaDeProductos.Remove(producto);
+                return true;
+            }
+        }
+        public void PagarEmpleados()
+        {
+            Restaurante.OrdenarEmpleadosPorPrioridad();
 
+            List<Empleado> empleadosSinPago = new List<Empleado>();
 
+            foreach (var empleado in Restaurante.ListaEmpleadosPorPrioridad.ToList())
+            {
+                if (empleado.Sueldo <= Restaurante.Dinero)
+                {
+                    PagarEmpleado(empleado);
+                    Restaurante.ListaEmpleadosPorPrioridad.Remove(empleado);
+                }
+                else
+                {
+                    empleadosSinPago.Add(empleado);
+                }
+            }
+            if(Restaurante.ListaEmpleadosPorPrioridad.Count > 0)
+            {
+                EmpleadosSinPago();
+            }
+        }
+        public void EmpleadosSinPago()
+        {
+            Console.WriteLine("EMPLEADOS SIN PAGO");
+            foreach (var i in Restaurante.ListaEmpleadosPorPrioridad)
+            {
+                Console.WriteLine($"{i.Nombre} {i.Apellido}");
+            }
+        }
+        private void PagarEmpleado(Empleado empleado)
+        {
+            empleado.Dinero += empleado.Sueldo;
+            Restaurante.QuitarDinero(empleado.Sueldo);
+        }
 
-
-
-
-
+        #region METODOS DE MOSTRAR
         public void MostrarDeudaRestaurante()
         {
             Console.WriteLine($"$ {Restaurante.Deuda}");
@@ -97,17 +139,7 @@ namespace TpRestauranteActualizado.Clases.Empleados
                 Console.WriteLine($"${items.Precio} {items.Nombre}");
             }
         }
-        public bool EliminarProducto(Producto producto)
-        {
-            if (!Restaurante.ListaDeProductos.Contains(producto))
-            {
-                return false;
-            }
-            else
-            {
-                Restaurante.ListaDeProductos.Remove(producto);
-                return true;
-            }
-        }
+        #endregion
+
     }
 }

@@ -40,12 +40,12 @@ namespace TpRestauranteActualizado
 
             //--------------------------------------------------
             #region Empleados
-            Encargado tomi = new Encargado("Tomas", "Fragnito", "esme123", 1139310243,14000);
-            Encargado tomi2 = new Encargado("Tomas", "Fragnito", "esme123", 1139310243, 14000);
-            Cocinero oscar = new Cocinero("Oscar", "Lele", "esme553", 1114343243, 14000);
-            Mesero pablo = new Mesero("Pablo", "Koko", "esme999", 150978042, 14000);
-            Delivery hector = new Delivery("Hector", "Mbappe", "esme451", 1198547632, 14000);
-            Mesero mohamed = new Mesero("Mohamed", "Redriguez", "Colombres132", 1176341254, 14000);
+            Encargado tomi = new Encargado("Tomas", "Fragnito", "esme123", 1139310243,1000);
+            Encargado tomi2 = new Encargado("Tomas", "Fragnito", "esme123", 1139310243, 1000);
+            Cocinero oscar = new Cocinero("Oscar", "Lele", "esme553", 1114343243, 300);
+            Mesero pablo = new Mesero("Pablo", "Koko", "esme999", 150978042, 100);
+            Delivery hector = new Delivery("Hector", "Mbappe", "esme451", 1198547632, 1);
+            Mesero mohamed = new Mesero("Mohamed", "Redriguez", "Colombres132", 1176341254, 1);
 
             Restaurante.AgregarEmpleado(tomi);
             Restaurante.AgregarEmpleado(tomi);
@@ -276,11 +276,34 @@ namespace TpRestauranteActualizado
             Console.WriteLine("---ESTADO DE RESTAURANTE------");
             Console.WriteLine("DINERO");
             tomi.MostrarDineroRestaurante();
-            Console.WriteLine("DEUDA");
-            tomi.MostrarDeudaRestaurante();
+            Console.WriteLine("");
+            //Restaurante.QuitarDinero(38300);
+            Console.WriteLine("DINERO");
+            tomi.MostrarDineroRestaurante();
 
             Console.WriteLine("");
             #endregion
+
+            //--------------------------------------------------
+            #region PAGA DE EMPLEADOS
+            Console.WriteLine("---PAGA DE EMPLEADOS------");
+            Console.WriteLine("LISTA DE PRIORIDAD DE PAGA");
+            tomi.PagarEmpleados();
+            Console.WriteLine("");
+            Restaurante.MostrarSueldoTotalDeTodos();
+            Console.WriteLine("");
+            #endregion
+
+            //--------------------------------------------------
+            #region ESTADO DE RESTAURANTE
+            Console.WriteLine("---ESTADO DE RESTAURANTE------");
+            Console.WriteLine("DINERO");
+            tomi.MostrarDineroRestaurante();
+
+            Console.WriteLine("");
+            #endregion
+
+
         }
     }
 }
