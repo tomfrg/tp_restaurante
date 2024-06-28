@@ -16,10 +16,7 @@ namespace TpRestauranteActualizado.Clases.Empleados
         private double _sueldo;
         public Encargado(string nombre, string apellido, string direccion, int contacto, double sueldo) : base( nombre,  apellido,  direccion,  contacto,  sueldo)
         {
-            _nombre = nombre;
-            _apellido = apellido;
-            _direccion = direccion;
-            _contacto = contacto;
+
         }
         public void ComprarProducto(Producto producto, double stockIngresado, Proveedor proveedor)
         {

@@ -122,12 +122,7 @@ namespace TpRestauranteActualizado
 
             //--------------------------------------------------
             #region Mesa
-            Dictionary<IItemMenu, double> pedidoDelCliente = new Dictionary<IItemMenu, double>
-            {
-                {milanesa, 4},
-                {leche, 2},
-            };
-            Mesa mesa1 = new Mesa(1, 5, pedidoDelCliente);
+            Mesa mesa1 = new Mesa(1, 5);
             #endregion
 
 
@@ -187,7 +182,7 @@ namespace TpRestauranteActualizado
             //--------------------------------------------------
             #region COCINAR PLATOS DE COMIDA
             Console.WriteLine("---COCINAR DE PLATOS DE COMIDA------");
-            milanesa.CocinarPlatoDeComida(10);
+            oscar.CocinarPlatoDeComida(10,milanesa);
 
             Console.WriteLine("");
             #endregion
@@ -262,10 +257,19 @@ namespace TpRestauranteActualizado
             #region MESAS ASIGNADAS
 
             Console.WriteLine("---MESAS ASIGNADAS------");
+            Dictionary<IItemMenu, double> pedidoDelCliente = new Dictionary<IItemMenu, double>
+            {
+                {milanesa, 4},
+                {leche, 2},
+            };
+            pablo.AtenderMesa(mesa1, pedidoDelCliente);
             pablo.ServirPedidoDelCliente(mesa1);
+            mesa1.MostrarEstadoDeLaMesa();
             pablo.CobrarMesa(mesa1);
+            mesa1.MostrarEstadoDeLaMesa();
             Console.WriteLine("COSTE TOTAL DE LA MESA:");
             mesa1.MostrarCosteTotal();
+            Console.WriteLine("PEDIDO DE LA MESA:");
             mesa1.MostrarPedidol();
 
             Console.WriteLine("");
@@ -299,6 +303,16 @@ namespace TpRestauranteActualizado
             Console.WriteLine("---ESTADO DE RESTAURANTE------");
             Console.WriteLine("DINERO");
             tomi.MostrarDineroRestaurante();
+
+            Console.WriteLine("");
+            #endregion
+
+            //--------------------------------------------------
+            #region ESTADO DE RESTAURANTE
+            Console.WriteLine("---CONSUMO TOTAL DEL RESTAURANTE------");
+            Console.WriteLine($"${mesa1.CosteTotal}");
+            Console.WriteLine($"${Restaurante.CalcularConsumoTotal()}");
+            
 
             Console.WriteLine("");
             #endregion

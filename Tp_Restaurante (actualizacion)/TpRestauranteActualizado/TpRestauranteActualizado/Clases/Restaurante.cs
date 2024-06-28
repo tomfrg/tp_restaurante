@@ -22,6 +22,11 @@ namespace TpRestauranteActualizado.Clases
             get { return _listaDeProductos; } 
             set { _listaDeProductos = value;}
         }
+        public static List<Mesa> ListaDeMesas
+        {
+            get { return _listaDeMesas; }
+            set { _listaDeMesas = value; }
+        }
         public static List<Proveedor> ListaProveedores
         { get { return _listaProveedores; } }
         public static List<Empleado> ListaEmpleados
@@ -194,8 +199,19 @@ namespace TpRestauranteActualizado.Clases
                 Console.WriteLine(i);
             }
         }
-
-
+        //--------------------------------------------------------------------------------
+        public static double CalcularConsumoTotal()
+        {
+            double consumoTotal = 0;
+            foreach(var empleado in ListaEmpleados)
+            {
+                if (empleado is IConsumoTotal consumos)
+                {
+                    consumoTotal = consumos.ConsumoTotal + consumoTotal;
+                }
+            }
+            return consumoTotal;
+        }
         /*
         public static bool AgregarPlatoDeComida(PlatoDeComida platoDeComida)
         {

@@ -42,7 +42,7 @@ namespace TpRestauranteActualizado.Clases
             _tiempoDePreparacion = tiempoDePreparacion;
             CalcularCoste();
         }
-        private bool RestarIngredientes()
+        public bool RestarIngredientes()
         {
             foreach (var item in Ingrediente)
             {
@@ -58,17 +58,6 @@ namespace TpRestauranteActualizado.Clases
                 }
             }
             return true;
-        }
-        public void CocinarPlatoDeComida(double cantidadParaCocinar)
-        {
-            if (RestarIngredientes())
-            {
-                Stock = cantidadParaCocinar + Stock;
-            }
-            else
-            {
-                Console.WriteLine("error");
-            }
         }
         private void CalcularCoste()
         {

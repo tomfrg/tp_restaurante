@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace TpRestauranteActualizado.Clases
 {
+    interface IConsumoTotal
+    {
+        double ConsumoTotal { get; set; }
+    }
     public class Empleado
     {
         private string _nombre;
@@ -34,6 +38,7 @@ namespace TpRestauranteActualizado.Clases
             get { return _dinero; } 
             set { _dinero = value; }
         }
+
         public static bool operator ==(Empleado e1, Empleado e2)
         {
             if (ReferenceEquals(e1, null) && ReferenceEquals(e2, null))

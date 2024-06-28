@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,11 +17,18 @@ namespace TpRestauranteActualizado.Clases.Empleados
 
         public Cocinero(string nombre, string apellido, string direccion, int contacto, double sueldo) : base(nombre, apellido, direccion, contacto, sueldo)
         {
-            _nombre = nombre;
-            _apellido = apellido;
-            _direccion = direccion;
-            _contacto = contacto;
 
+        }
+        public void CocinarPlatoDeComida(double cantidadParaCocinar, PlatoDeComida platoDeComida)
+        {
+            if (platoDeComida.RestarIngredientes())
+            {
+                platoDeComida.Stock = cantidadParaCocinar + platoDeComida.Stock;
+            }
+            else
+            {
+                Console.WriteLine("no hay suficientes ingredientes");
+            }
         }
     }
 }

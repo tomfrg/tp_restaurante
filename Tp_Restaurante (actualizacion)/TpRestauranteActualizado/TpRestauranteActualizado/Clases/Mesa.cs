@@ -11,9 +11,15 @@ namespace TpRestauranteActualizado.Clases
         private int _id;
         private int _capacidad;
         private double _costeTotal;
+        private bool _cerrada = false;
         private Dictionary<IItemMenu, double> _pedidoDeCliente;
         public int Id
         { get { return _id; } }
+        public bool Cerrada
+        { 
+            get { return _cerrada; } 
+            set { _cerrada = value; }
+        }
         public int Capacidad
         { get { return _capacidad; } }
         public double CosteTotal
@@ -22,20 +28,14 @@ namespace TpRestauranteActualizado.Clases
             set { _costeTotal = value; }
         }
         public Dictionary<IItemMenu, double> PedidoDeCliente
-        { get { return _pedidoDeCliente;} }
-        public Mesa(int id, int capacidad, Dictionary<IItemMenu, double> pedidoDeCliente) 
+        { 
+            get { return _pedidoDeCliente;} 
+            set { _pedidoDeCliente = value;}
+        }
+        public Mesa(int id, int capacidad) 
         {
             _id = id;
             _capacidad = capacidad;
-            _pedidoDeCliente = pedidoDeCliente;
-            CalcularCosteTotal();
-        }
-        private void CalcularCosteTotal()
-        {
-            foreach(var item in PedidoDeCliente)
-            {
-                CosteTotal = (item.Key.Precio * item.Value) + CosteTotal;
-            }
         }
         public void MostrarCosteTotal()
         {
@@ -46,6 +46,17 @@ namespace TpRestauranteActualizado.Clases
             foreach(var i in  PedidoDeCliente)
             {
                 Console.WriteLine($"{i.Key.Nombre} - {i.Value}");
+            }
+        }
+        public void MostrarEstadoDeLaMesa()
+        {
+            if(Cerrada)
+            {
+                Console.WriteLine($" CERRADA ");
+            }
+            else
+            {
+                Console.WriteLine($" ABIERTO ");
             }
         }
     }
