@@ -1,7 +1,0 @@
-C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp en consola\tpRestauranteConsola\tpRestauranteConsola\bin\Debug\tpRestauranteConsola.exe.config
-C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp en consola\tpRestauranteConsola\tpRestauranteConsola\bin\Debug\tpRestauranteConsola.exe
-C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp en consola\tpRestauranteConsola\tpRestauranteConsola\bin\Debug\tpRestauranteConsola.pdb
-C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp en consola\tpRestauranteConsola\tpRestauranteConsola\obj\Debug\tpRestauranteConsola.csproj.AssemblyReference.cache
-C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp en consola\tpRestauranteConsola\tpRestauranteConsola\obj\Debug\tpRestauranteConsola.csproj.CoreCompileInputs.cache
-C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp en consola\tpRestauranteConsola\tpRestauranteConsola\obj\Debug\tpRestauranteConsola.exe
-C:\Users\Thomas\Desktop\UTN\2º CUATRIMESTRE\TP-RESTAURANTE\tp en consola\tpRestauranteConsola\tpRestauranteConsola\obj\Debug\tpRestauranteConsola.pdb
